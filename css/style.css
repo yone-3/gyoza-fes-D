@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 16px;
+    color: #131a12;
+    background: #fff7f7;
+    line-height: 180%;
+}
+
+/* -----------------コンテンツ幅のクラス----------------- */
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 92%;
+}
+
+/* -----------------モバイルファースト -----------------*/
+/*----------------- 共通部分 -----------------*/
+/* ----------------－いじらないでね♥----------------- */
+header {
+    padding: 20px 15px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+h1 img {
+    width: 200px;
+}
+
+.header-sp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-pc {
+    display: none;
+}
+
+/* ↓仮置きのハンバーガーイメージ */
+header .hamburger-image {
+    width: 25px;
+    height: 24px;
+}
+
+.pc-nav li a:hover {
+    border-bottom: solid 2px #e22a00;
+}
+
+.pc-nav li img:hover {
+    text-decoration: underline solid 2px #e22a00;
+}
+
+section {
+    padding-block: 30px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-block-end: 30px;
+    border-bottom: 3px solid #e22a00;
+    margin-block-end: 60px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: #e22a00;
+    padding: 5px 10px;
+    margin-block-end: 30px;
+}
+
+/* 黒いボタン */
+.btn-black {
+    text-align: center;
+}
+
+.btn-black a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #131a12;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px 85px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.btn-black a:hover {
+    text-decoration: underline solid 1px #fff;
+}
+
+/* 赤いボタン */
+/* .btn-red {
+    text-align: center;
+} */
+
+.btn-red a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #e22a00;
+    max-width: 300px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin: 0 auto
+}
+
+.btn-red a:hover {
+    text-decoration: underline solid 1px #fff;
+}
+
+footer {
+    font-size: 14px;
+    padding: 20px 0;
+    text-align: center;
+    background: #fff;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer li a:hover {
+    text-decoration: underline solid 1px #131a12;
+}
+
+/* -----------------以下各ページごとのコーディング----------------- */
+
+
+
+/* -----------------PC共通部分----------------- */
+/* ----------------－いじらないでね♥----------------- */
+@media(min-width:768px) {
+
+
+    header {
+        padding: 50px;
+        margin-block-end: 80px;
+    }
+
+    .pc-logo {
+        width: 350px;
+    }
+
+    .header-sp {
+        display: none;
+    }
+
+    .header-pc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pc-nav ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .pc-nav li {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .x-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .instagram-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .youtube-logo {
+        width: 30px;
+        height: 24px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-block-end: 80px;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin-block-end: 80px;
+    }
+
+    /* -----------------以下、各ページ設定----------------- */
+
+}
