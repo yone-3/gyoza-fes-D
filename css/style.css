@@ -21,7 +21,7 @@ body {
 header {
     padding: 20px 15px;
     background: #fff;
-    margin-bottom: 60px;
+    margin-block-end: 60px;
 }
 
 h1 img {
@@ -44,7 +44,7 @@ header .hamburger-image {
 }
 
 .pc-nav li a:hover {
-    border-bottom: solid 2px #e22a00;
+    border-block-end: solid 2px #e22a00;
 }
 
 .pc-nav li img:hover {
@@ -60,7 +60,7 @@ h2 {
     /* font-size: clamp(2rem, 1.860rem + 0.65vw, 2.25rem); */
     font-weight: bold;
     padding-block-end: 30px;
-    border-bottom: 3px solid #e22a00;
+    border-block-end: 3px solid #e22a00;
     margin-block-end: 60px;
     text-align: center;
 }
@@ -150,9 +150,9 @@ footer li a:hover {
         margin-block-end: 80px;
     }
 
-    .pc-logo {
+    /* h1 img {
         width: 350px;
-    }
+    } */
 
     .header-sp {
         display: none;
