@@ -10,7 +10,7 @@ body {
 
 /* -----------------コンテンツ幅のクラス----------------- */
 .wrapper {
-    width: max(92%, 960px);
+    width: min(92%, 960px);
     margin: 0 auto;
 
 }
@@ -22,6 +22,7 @@ header {
     padding: 20px 15px;
     background: #fff;
     margin-block-end: 60px;
+    /* margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem); */
 }
 
 h1 img {
@@ -53,6 +54,7 @@ header .hamburger-image {
 
 section {
     padding-block: 30px;
+    /* padding-block: clamp(1.875rem, 1.524rem + 1.626vw, 2.5rem); */
 }
 
 h2 {
@@ -62,6 +64,7 @@ h2 {
     padding-block-end: 30px;
     border-block-end: 3px solid #e22a00;
     margin-block-end: 60px;
+    /* margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem); */
     text-align: center;
 }
 
@@ -73,6 +76,7 @@ h3 {
     background: #e22a00;
     padding: 5px 10px;
     margin-block-end: 30px;
+    /* margin-block-end: clamp(1.875rem, 0.122rem + 8.13vw, 5rem); */
 }
 
 /* 黒いボタン */
@@ -191,7 +195,7 @@ footer li a:hover {
     }
 
     section {
-        padding: 40px 0;
+        padding-block: 40px;
     }
 
     h2 {
