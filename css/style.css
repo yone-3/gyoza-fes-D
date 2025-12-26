@@ -151,6 +151,40 @@ footer li a:hover {
 /* -----------------以下各ページごとのコーディング----------------- */
 
 
+/* ここからshopsページ */
+/* shops レイアウト */
+.l-muCard-ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.l-mnCard-bs{
+    font-weight: bold;
+    margin: 15px 0px;
+}
+.l-mnCard-title{
+    font-weight: bold;
+    margin: 15px 0px;
+}
+.l-muCard-ul .l-mnCard-des{
+    
+}
+/* shops コンポーネント */
+.l-muCard-ul .c-mnCard{
+    width: 300px;
+}
+.l-muCard-ul .c-mnCard img{
+    width: 100%;
+    object-fit: cover;
+    height: 225px;
+}
+/* imgのpoint画像がちょっと細いverになってる */
+.c-mnCard-bs::before{
+    content: url(../img/point.svg);
+}
+
+
 
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
