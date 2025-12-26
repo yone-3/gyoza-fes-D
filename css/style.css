@@ -168,7 +168,7 @@ footer li a:hover {
     margin: 15px 0px;
 }
 .l-muCard-ul .l-mnCard-des{
-    
+    margin: 15px;
 }
 /* shops コンポーネント */
 .l-muCard-ul .c-mnCard{
@@ -183,7 +183,12 @@ footer li a:hover {
 .c-mnCard-bs::before{
     content: url(../img/point.svg);
 }
-
+.c-mnCard-des dt{
+    width: 30%;
+}
+.c-mnCard-des dd{
+    width: 70%;
+}
 
 
 /* -----------------PC共通部分----------------- */
