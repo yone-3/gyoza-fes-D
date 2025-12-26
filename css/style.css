@@ -16,8 +16,12 @@ body {
     line-height: 180%;
 }
 
+img {
+    width: 100%;
+}
+
 /* -----------------コンテンツ幅のクラス----------------- */
-.wrapper {
+.l-wrapper {
     width: min(92%, 960px);
     margin: 0 auto;
 
