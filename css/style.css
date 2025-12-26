@@ -169,6 +169,8 @@ footer li a:hover {
 }
 .l-muCard-ul .l-mnCard-des{
     margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /* shops コンポーネント */
 .l-muCard-ul .c-mnCard{
