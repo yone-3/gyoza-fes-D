@@ -136,20 +136,25 @@ h3 {
     text-decoration: underline solid 1px var(--white);
 }
 
-footer {
+.l-footer {
     font-size: 14px;
     padding: 20px 0;
     text-align: center;
     background: var(--white);
 }
 
-footer ul {
+.l-footer ul {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-footer li a:hover {
+.l-footer li+li {
+    border-left: 1px solid var(--gyoza_black);
+    padding-left: 20px;
+}
+
+.l-footer li a:hover {
     text-decoration: underline solid 1px var(--gyoza_black);
 }
 
