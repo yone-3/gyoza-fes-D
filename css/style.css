@@ -34,8 +34,8 @@ img {
     padding: 20px 15px;
     background: var(--white);
     /* ↓スマホ版はない */
-    margin-block-end: 60px;
-    /* margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem); */
+    /* margin-block-end: 60px; */
+    margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem);
 }
 
 .c-header-logo img {
@@ -66,31 +66,34 @@ img {
 }
 
 section {
-    padding-block: 30px;
-    /* padding-block: clamp(1.875rem, 1.524rem + 1.626vw, 2.5rem); */
+    /* padding-block: 30px; */
+    padding-block: clamp(1.875rem, 1.524rem + 1.626vw, 2.5rem);
 }
 
 h2 {
-    font-size: 32px;
-    /* font-size: clamp(2rem, 1.860rem + 0.65vw, 2.25rem); */
+    /* font-size: 32px; */
+    font-size: clamp(2rem, 1.860rem + 0.65vw, 2.25rem);
     font-weight: bold;
     padding-block-end: 30px;
     border-block-end: 3px solid var(--gyoza_red);
-    margin-block-end: 60px;
-    /* margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem); */
+    /* margin-block-end: 60px; */
+    margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem);
     text-align: center;
 }
 
 h3 {
-    font-size: 24px;
-    /* font-size: clamp(1.5rem, 1.220rem + 1.301vw, 2rem); */
+    /* font-size: 24px; */
+    font-size: clamp(1.5rem, 1.220rem + 1.301vw, 2rem);
     font-weight: bold;
     color: var(--white);
     background: var(--gyoza_red);
     padding: 5px 10px;
-    margin-block-end: 30px;
-    /* margin-block-end: clamp(1.875rem, 0.122rem + 8.13vw, 5rem); */
+    /* margin-block-end: 30px; */
+    margin-block-end: clamp(1.875rem, 0.122rem + 8.13vw, 5rem);
 }
+
+/* ボタン */
+
 
 /* 黒いボタン */
 .btn-black {
@@ -115,10 +118,6 @@ h3 {
 }
 
 /* 赤いボタン */
-/* .btn-red {
-    text-align: center;
-} */
-
 .btn-red a {
     display: inline-block;
     font-size: 16px;
@@ -251,20 +250,6 @@ h3 {
     .c-header-nav__you {
         width: 30px;
         height: 24px;
-    }
-
-    section {
-        padding-block: 40px;
-    }
-
-    h2 {
-        font-size: 36px;
-        margin-block-end: 80px;
-    }
-
-    h3 {
-        font-size: 32px;
-        margin-block-end: 80px;
     }
 
     /* -----------------以下、各ページ設定----------------- */
