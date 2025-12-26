@@ -33,6 +33,7 @@ img {
 header {
     padding: 20px 15px;
     background: var(--white);
+    /* ↓スマホ版はない */
     margin-block-end: 60px;
     /* margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem); */
 }
