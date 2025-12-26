@@ -30,7 +30,7 @@ img {
 /* -----------------モバイルファースト -----------------*/
 /*----------------- 共通部分 -----------------*/
 /* ----------------－いじらないでね♥----------------- */
-header {
+.l-header {
     padding: 20px 15px;
     background: var(--white);
     /* ↓スマホ版はない */
@@ -38,30 +38,30 @@ header {
     /* margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem); */
 }
 
-h1 img {
+.c-header-logo img {
     width: clamp(12.5rem, 7.241rem + 24.39vw, 21.875rem);
 }
 
-.header-sp {
+.l-header-sp {
     display: flex;
     justify-content: space-between;
 }
 
-.header-pc {
+.l-header-pc {
     display: none;
 }
 
 /* ↓仮置きのハンバーガーイメージ */
-header .hamburger-image {
+.l-header .hamburger-image {
     width: 25px;
     height: 24px;
 }
 
-.nav-pc li a:hover {
+.c-header-nav li a:hover {
     border-block-end: solid 2px var(--gyoza_red);
 }
 
-.nav-pc li img:hover {
+.nav-pc li img:hover li img:hover {
     text-decoration: underline solid 2px var(--gyoza_red);
 }
 
@@ -162,7 +162,7 @@ footer li a:hover {
 @media(min-width:768px) {
 
 
-    header {
+    .l-header {
         padding: 50px;
         margin-block-end: 80px;
     }
@@ -171,38 +171,38 @@ footer li a:hover {
         width: 350px;
     } */
 
-    .header-sp {
+    .l-header-sp {
         display: none;
     }
 
-    .header-pc {
+    .l-header-pc {
         display: flex;
         justify-content: space-between;
     }
 
-    .nav-pc ul {
+    .c-header-nav ul {
         display: flex;
         justify-content: space-between;
         gap: 30px;
         align-items: center;
     }
 
-    .nav-pc li {
+    .c-header-nav li {
         font-size: 20px;
         font-weight: bold;
     }
 
-    .x-logo {
+    .c-header-nav__x {
         width: 25px;
         height: 25px;
     }
 
-    .instagram-logo {
+    .c-header-nav__insta {
         width: 30px;
         height: 30px;
     }
 
-    .youtube-logo {
+    .c-header-nav__you {
         width: 30px;
         height: 24px;
     }
