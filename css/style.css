@@ -52,11 +52,11 @@ header .hamburger-image {
     height: 24px;
 }
 
-.pc-nav li a:hover {
+.nav-pc li a:hover {
     border-block-end: solid 2px var(--gyoza_red);
 }
 
-.pc-nav li img:hover {
+.nav-pc li img:hover {
     text-decoration: underline solid 2px var(--gyoza_red);
 }
 
@@ -175,14 +175,14 @@ footer li a:hover {
         justify-content: space-between;
     }
 
-    .pc-nav ul {
+    .nav-pc ul {
         display: flex;
         justify-content: space-between;
         gap: 30px;
         align-items: center;
     }
 
-    .pc-nav li {
+    .nav-pc li {
         font-size: 20px;
         font-weight: bold;
     }
