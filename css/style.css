@@ -178,9 +178,17 @@ footer li a:hover {
     height: 26px;
 }
 
+/* .c-menu_title{
+    font-size: 28px;
+} */
+
 .c-menu_desc {
     font-size: 20px;
     margin-bottom: 45px;
+}
+
+.c-menu_info dt {
+    font-weight: normal;
 }
 
 .c-menu_shop {
