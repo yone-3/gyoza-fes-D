@@ -61,11 +61,20 @@
                 </div> -->
 
         <h2>お問い合わせ</h2>
-        <p>お名前<input type="text" name="user_name" required></p>
-        <p>メールアドレス<input type="email" name="user_email" required></p>
+        <p>お名前
+        <div class="c-infoForm-req">
+            <p>必須</p>
+        </div><input type="text" name="user_name" required></p>
+        <p>メールアドレス
+        <div class="c-infoForm-req">
+            <p>必須</p>
+        </div><input type="email" name="user_email" required></p>
         <p>電話番号<input type="tel" name="user_tel"></p>
-        <p>お問い合わせ内容<textarea name="message" required></textarea></p>
-
+        <p>お問い合わせ内容
+        <div class="c-infoForm-req">
+            <p>必須</p>
+        </div><textarea name="message" required></textarea></p>
+        <p><input type="submit" value="送信"></p>
 
 
     </main>
