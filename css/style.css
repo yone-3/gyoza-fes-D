@@ -154,7 +154,46 @@ footer li a:hover {
 
 /* -----------------以下各ページごとのコーディング----------------- */
 
+/* ここから先はshop-info.htmlのcssでっす */
+.c-section {
+    padding: 0 15px;
+    margin-bottom: 60px;
+}
 
+.c-menu_img {
+    height: 259px;
+    object-fit: cover;
+}
+
+.c-menu_location {
+    font-weight: bold;
+    display: flex;
+    text-align: left;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.c-menu_location img {
+    width: 19px;
+    height: 26px;
+}
+
+.c-menu_desc {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.c-menu_shop {
+    margin: 60px 0;
+}
+
+.c-menu_shop_title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--gyoza_red);
+}
 
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
