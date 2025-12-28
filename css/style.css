@@ -35,11 +35,11 @@ img {
     background: var(--white);
     /* ↓スマホ版はない */
     /* margin-block-end: 60px; */
-    margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem);
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 .c-header-logo img {
-    width: clamp(12.5rem, 7.241rem + 24.39vw, 21.875rem);
+    width: clamp(200px, 147.183px + 14.085vw, 350px);
 }
 
 .l-header-sp {
@@ -67,72 +67,65 @@ img {
 
 section {
     /* padding-block: 30px; */
-    padding-block: clamp(1.875rem, 1.524rem + 1.626vw, 2.5rem);
+    padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 h2 {
     /* font-size: 32px; */
-    font-size: clamp(2rem, 1.860rem + 0.65vw, 2.25rem);
+    font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
     padding-block-end: 30px;
     border-block-end: 3px solid var(--gyoza_red);
     /* margin-block-end: 60px; */
-    margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem);
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
     text-align: center;
 }
 
 h3 {
     /* font-size: 24px; */
-    font-size: clamp(1.5rem, 1.220rem + 1.301vw, 2rem);
+    font-size: clamp(24px, 21.183px + 0.751vw, 32px);
     font-weight: bold;
     color: var(--white);
     background: var(--gyoza_red);
     padding: 5px 10px;
     /* margin-block-end: 30px; */
-    margin-block-end: clamp(1.875rem, 0.122rem + 8.13vw, 5rem);
+    margin-block-end: clamp(30px, 12.394px + 4.695vw, 80px);
 }
 
 /* ボタン */
-
-
-/* 黒いボタン */
-.btn-black {
-    text-align: center;
-}
-
-.btn-black a {
+.c-btn a {
     display: inline-block;
-    font-size: 20px;
     font-weight: bold;
     color: var(--white);
-    background: var(--gyoza_black);
     max-width: 300px;
     text-align: center;
-    padding: 15px 85px;
-    border-radius: 15px;
     margin: 0 auto;
 }
 
-.btn-black a:hover {
+.c-btn a :hover {
     text-decoration: underline solid 1px var(--white);
 }
+
+/* 黒いボタン */
+
+.c-btn__black {
+    text-align: center;
+}
+
+.c-btn__black a {
+    font-size: 20px;
+    background: var(--gyoza_black);
+    padding: 15px 85px;
+    border-radius: 15px;
+}
+
 
 /* 赤いボタン */
-.btn-red a {
-    display: inline-block;
+.c-btn__red a {
     font-size: 16px;
-    font-weight: bold;
-    color: var(--white);
     background: var(--gyoza_red);
-    max-width: 300px;
-    text-align: center;
     padding: 5px 10px;
     border-radius: 7px;
-    margin: 0 auto
-}
-
-.btn-red a:hover {
-    text-decoration: underline solid 1px var(--white);
 }
 
 .l-footer {
@@ -162,42 +155,49 @@ h3 {
 
 /* ここからshopsページ */
 /* shops レイアウト */
-.l-muCard-ul{
+.l-muCard-ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.l-mnCard-bs{
+.l-mnCard-bs {
     font-weight: bold;
     margin: 15px 0px;
 }
-.l-mnCard-title{
+
+.l-mnCard-title {
     font-weight: bold;
     margin: 15px 0px;
 }
-.l-muCard-ul .l-mnCard-des{
+
+.l-muCard-ul .l-mnCard-des {
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
 }
+
 /* shops コンポーネント */
-.l-muCard-ul .c-mnCard{
+.l-muCard-ul .c-mnCard {
     width: 300px;
 }
-.l-muCard-ul .c-mnCard img{
+
+.l-muCard-ul .c-mnCard img {
     width: 100%;
     object-fit: cover;
     height: 225px;
 }
+
 /* imgのpoint画像がちょっと細いverになってる */
-.c-mnCard-bs::before{
+.c-mnCard-bs::before {
     content: url(../img/point.svg);
 }
-.c-mnCard-des dt{
+
+.c-mnCard-des dt {
     width: 30%;
 }
-.c-mnCard-des dd{
+
+.c-mnCard-des dd {
     width: 70%;
 }
 
@@ -209,7 +209,7 @@ h3 {
 
     .l-header {
         padding: 50px;
-        margin-block-end: 80px;
+        /* margin-block-end: 80px; */
     }
 
     /* h1 img {
