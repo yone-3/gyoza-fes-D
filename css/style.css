@@ -70,7 +70,7 @@ section {
     padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
-h2 {
+.c-title {
     /* font-size: 32px; */
     font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
@@ -81,7 +81,7 @@ h2 {
     text-align: center;
 }
 
-h3 {
+.c-title__sub {
     /* font-size: 24px; */
     font-size: clamp(24px, 21.183px + 0.751vw, 32px);
     font-weight: bold;
