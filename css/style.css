@@ -34,8 +34,7 @@ img {
     padding: 20px 15px;
     background: var(--white);
     /* ↓スマホ版はない */
-    /* margin-block-end: 60px; */
-    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+    /* margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px); */
 }
 
 .c-header-logo img {
@@ -152,6 +151,98 @@ section {
 
 /* -----------------以下各ページごとのコーディング----------------- */
 
+/* ここからTOP / NEWSページ */
+
+
+.c-mv-sec {
+    background: url(/img/mainvisual.jpg);
+    background-size: cover;
+    object-fit: cover;
+    padding-block-start: 68px;
+    padding-block-end: 200px;
+}
+
+.c-mv-sec__img {
+    width: clamp(345px, 184.789px + 42.723vw, 800px);
+    height: clamp(313px, 194.338px + 31.643vw, 650px);
+    margin: 0 auto;
+}
+
+.l-about-sec {
+    background: var(--gyoza_yellow);
+    padding-block: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
+.l-about-inner {
+    background: var(--white);
+    padding-block: 60px;
+    margin-block-end: 80px;
+}
+
+.c-about-concept {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+
+
+}
+
+.c-about-concept__big {
+    font-weight: bold;
+    font-size: clamp(20px, 15.775px + 1.127vw, 32px);
+}
+
+.c-about-concept__red {
+    color: var(--gyoza_red);
+}
+
+.c-about-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.c-about-list dl {
+    text-align: center;
+}
+
+.c-about-list dd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.c-about-detail__title {
+    font-weight: normal;
+    font-size: 24px;
+    margin-block-end: clamp(30px, 21.197px + 2.347vw, 55px);
+}
+
+.c-about-detail__main {
+    font-weight: bold;
+    font-size: clamp(24px, 21.183px + 0.751vw, 32px);
+}
+
+.c-about-detail__sub {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.c-about-detaol__address {
+    text-align: left;
+}
+
+.c-about-detail__note {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.c-about-pc {
+    display: none;
+}
 
 /* ここからshopsページ */
 /* shops レイアウト */
@@ -218,6 +309,10 @@ section {
         /* margin-block-end: 80px; */
     }
 
+    .l-header-top {
+        margin-block-end: 0;
+    }
+
     /* h1 img {
         width: 350px;
     } */
@@ -229,6 +324,7 @@ section {
     .l-header-pc {
         display: flex;
         justify-content: space-between;
+        margin-block-end: 80px;
     }
 
     .c-header-nav ul {
@@ -260,4 +356,37 @@ section {
 
     /* -----------------以下、各ページ設定----------------- */
 
+    /* TOP */
+    .c-header-top {
+        margin-block-end: 0;
+    }
+
+    .c-mv-sec__img {
+        margin: 117px auto;
+    }
+
+    .c-about-concept {
+        padding-inline: 90px;
+    }
+
+    .c-about-detail {
+        margin-block-end: 80px;
+        flex-direction: row;
+    }
+
+    .c-about-list dl {
+        width: 440px;
+        height: 353px;
+        padding-block: 30px;
+        border-top: 1px solid var(--gyoza_black);
+        border-bottom: 1px solid var(--gyoza_black);
+    }
+
+    .c-about-sp {
+        display: none;
+    }
+
+    .c-about-pc {
+        display: inline-block;
+    }
 }
