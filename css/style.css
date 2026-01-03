@@ -16,8 +16,12 @@ body {
     line-height: 180%;
 }
 
+img {
+    width: 100%;
+}
+
 /* -----------------コンテンツ幅のクラス----------------- */
-.wrapper {
+.l-wrapper {
     width: min(92%, 960px);
     margin: 0 auto;
 
@@ -26,134 +30,223 @@ body {
 /* -----------------モバイルファースト -----------------*/
 /*----------------- 共通部分 -----------------*/
 /* ----------------－いじらないでね♥----------------- */
-header {
+.l-header {
     padding: 20px 15px;
     background: var(--white);
-    margin-block-end: 60px;
-    /* margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem); */
+    /* ↓スマホ版はない */
+    /* margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px); */
 }
 
-h1 img {
-    width: clamp(12.5rem, 7.241rem + 24.39vw, 21.875rem);
+.c-header-logo img {
+    width: clamp(200px, 147.183px + 14.085vw, 350px);
 }
 
-.header-sp {
+.l-header-sp {
     display: flex;
     justify-content: space-between;
 }
 
-.header-pc {
+.l-header-pc {
     display: none;
 }
 
 /* ↓仮置きのハンバーガーイメージ */
-header .hamburger-image {
+.l-header .hamburger-image {
     width: 25px;
     height: 24px;
 }
 
-.nav-pc li a:hover {
+.c-header-nav li a:hover {
     border-block-end: solid 2px var(--gyoza_red);
 }
 
-.nav-pc li img:hover {
+.nav-pc li img:hover li img:hover {
     text-decoration: underline solid 2px var(--gyoza_red);
 }
 
 section {
-    padding-block: 30px;
-    /* padding-block: clamp(1.875rem, 1.524rem + 1.626vw, 2.5rem); */
+    /* padding-block: 30px; */
+    padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
-h2 {
-    font-size: 32px;
-    /* font-size: clamp(2rem, 1.860rem + 0.65vw, 2.25rem); */
+.c-title {
+    /* font-size: 32px; */
+    font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
     padding-block-end: 30px;
     border-block-end: 3px solid var(--gyoza_red);
-    margin-block-end: 60px;
-    /* margin-block-end: clamp(3.75rem, 3.049rem + 3.252vw, 5rem); */
+    /* margin-block-end: 60px; */
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
     text-align: center;
 }
 
-h3 {
-    font-size: 24px;
-    /* font-size: clamp(1.5rem, 1.220rem + 1.301vw, 2rem); */
+.c-title__sub {
+    /* font-size: 24px; */
+    font-size: clamp(24px, 21.183px + 0.751vw, 32px);
     font-weight: bold;
     color: var(--white);
     background: var(--gyoza_red);
     padding: 5px 10px;
-    margin-block-end: 30px;
-    /* margin-block-end: clamp(1.875rem, 0.122rem + 8.13vw, 5rem); */
+    /* margin-block-end: 30px; */
+    margin-block-end: clamp(30px, 12.394px + 4.695vw, 80px);
 }
 
-/* 黒いボタン */
-.btn-black {
-    text-align: center;
-}
-
-.btn-black a {
+/* ボタン */
+.c-btn a {
     display: inline-block;
-    font-size: 20px;
     font-weight: bold;
     color: var(--white);
-    background: var(--gyoza_black);
     max-width: 300px;
     text-align: center;
-    padding: 15px 85px;
-    border-radius: 15px;
     margin: 0 auto;
 }
 
-.btn-black a:hover {
+.c-btn a :hover {
     text-decoration: underline solid 1px var(--white);
 }
+
+/* 黒いボタン */
+
+.c-btn__black {
+    text-align: center;
+}
+
+.c-btn__black a {
+    font-size: 20px;
+    background: var(--gyoza_black);
+    padding: 15px 85px;
+    border-radius: 15px;
+}
+
 
 /* 赤いボタン */
-/* .btn-red {
-    text-align: center;
-} */
-
-.btn-red a {
-    display: inline-block;
+.c-btn__red a {
     font-size: 16px;
-    font-weight: bold;
-    color: var(--white);
     background: var(--gyoza_red);
-    max-width: 300px;
-    text-align: center;
     padding: 5px 10px;
     border-radius: 7px;
-    margin: 0 auto
 }
 
-.btn-red a:hover {
-    text-decoration: underline solid 1px var(--white);
-}
-
-footer {
+.l-footer {
     font-size: 14px;
     padding: 20px 0;
     text-align: center;
     background: var(--white);
 }
 
-footer ul {
+.l-footer ul {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-footer li a:hover {
+.l-footer li+li {
+    border-left: 1px solid var(--gyoza_black);
+    padding-left: 20px;
+}
+
+.l-footer li a:hover {
     text-decoration: underline solid 1px var(--gyoza_black);
 }
 
 /* -----------------以下各ページごとのコーディング----------------- */
 
+/* ここからTOP / NEWSページ */
+
+
+.c-mv-sec {
+    background: url(/img/mainvisual.jpg);
+    background-size: cover;
+    object-fit: cover;
+    padding-block-start: 68px;
+    padding-block-end: 200px;
+}
+
+.c-mv-sec__img {
+    width: clamp(345px, 184.789px + 42.723vw, 800px);
+    height: clamp(313px, 194.338px + 31.643vw, 650px);
+    margin: 0 auto;
+}
+
+.l-about-sec {
+    background: var(--gyoza_yellow);
+    padding-block: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
+.l-about-inner {
+    background: var(--white);
+    padding-block: 60px;
+    margin-block-end: 80px;
+}
+
+.c-about-concept {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+
+
+}
+
+.c-about-concept__big {
+    font-weight: bold;
+    font-size: clamp(20px, 15.775px + 1.127vw, 32px);
+}
+
+.c-about-concept__red {
+    color: var(--gyoza_red);
+}
+
+.c-about-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.c-about-list dl {
+    text-align: center;
+}
+
+.c-about-list dd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.c-about-detail__title {
+    font-weight: normal;
+    font-size: 24px;
+    margin-block-end: clamp(30px, 21.197px + 2.347vw, 55px);
+}
+
+.c-about-detail__main {
+    font-weight: bold;
+    font-size: clamp(24px, 21.183px + 0.751vw, 32px);
+}
+
+.c-about-detail__sub {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.c-about-detaol__address {
+    text-align: left;
+}
+
+.c-about-detail__note {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.c-about-pc {
+    display: none;
+}
 
 /* ここからshopsページ */
 /* shops レイアウト */
-.l-muCard-ul{
+.l-muCard-ul {
     display: flex;
     flex-wrap: wrap;
     row-gap: 80px;
@@ -162,37 +255,50 @@ footer li a:hover {
 .l-mnCard > *{
 margin-bottom: 15px;
 }
-.l-mnCard-bs{
+
+.l-mnCard-bs {
     font-weight: bold;
 }
-.l-mnCard-title{
+
+.l-mnCard-title {
     font-weight: bold;
 }
-.l-muCard-ul .l-mnCard-des{
+
+.l-muCard-ul .l-mnCard-des {
+    margin: 15px;
     display: flex;
     flex-wrap: wrap;
     height: 116px;
 }
 
 /* shops コンポーネント */
-.l-muCard-ul .c-mnCard{
+.l-muCard-ul .c-mnCard {
     width: 300px;
 }
-.l-muCard-ul .c-mnCard img{
+
+.l-muCard-ul .c-mnCard img {
     width: 100%;
     object-fit: cover;
     height: 225px;
 }
+
 /* imgのpoint画像がちょっと細いverになってる */
-.c-mnCard-bs::before{
+.c-mnCard-bs::before {
     content: url(../img/point.svg);
 }
 .c-mnCard-des dt{
     display: inline-block;
 }
-.c-mnCard-des dd{
+
+.c-mnCard-des dd {
     width: 70%;
 }
+
+.c-menu__small {
+    font-size: 14px;
+}
+
+
 
 
 
@@ -201,65 +307,89 @@ margin-bottom: 15px;
 @media(min-width:768px) {
 
 
-    header {
+    .l-header {
         padding: 50px;
-        margin-block-end: 80px;
+        /* margin-block-end: 80px; */
+    }
+
+    .l-header-top {
+        margin-block-end: 0;
     }
 
     /* h1 img {
         width: 350px;
     } */
 
-    .header-sp {
+    .l-header-sp {
         display: none;
     }
 
-    .header-pc {
+    .l-header-pc {
         display: flex;
         justify-content: space-between;
+        margin-block-end: 80px;
     }
 
-    .nav-pc ul {
+    .c-header-nav ul {
         display: flex;
         justify-content: space-between;
         gap: 30px;
         align-items: center;
     }
 
-    .nav-pc li {
+    .c-header-nav li {
         font-size: 20px;
         font-weight: bold;
     }
 
-    .x-logo {
+    .c-header-nav__x {
         width: 25px;
         height: 25px;
     }
 
-    .instagram-logo {
+    .c-header-nav__insta {
         width: 30px;
         height: 30px;
     }
 
-    .youtube-logo {
+    .c-header-nav__you {
         width: 30px;
         height: 24px;
     }
 
-    section {
-        padding-block: 40px;
-    }
-
-    h2 {
-        font-size: 36px;
-        margin-block-end: 80px;
-    }
-
-    h3 {
-        font-size: 32px;
-        margin-block-end: 80px;
-    }
-
     /* -----------------以下、各ページ設定----------------- */
 
+    /* TOP */
+    .c-header-top {
+        margin-block-end: 0;
+    }
+
+    .c-mv-sec__img {
+        margin: 117px auto;
+    }
+
+    .c-about-concept {
+        padding-inline: 90px;
+    }
+
+    .c-about-detail {
+        margin-block-end: 80px;
+        flex-direction: row;
+    }
+
+    .c-about-list dl {
+        width: 440px;
+        height: 353px;
+        padding-block: 30px;
+        border-top: 1px solid var(--gyoza_black);
+        border-bottom: 1px solid var(--gyoza_black);
+    }
+
+    .c-about-sp {
+        display: none;
+    }
+
+    .c-about-pc {
+        display: inline-block;
+    }
 }
