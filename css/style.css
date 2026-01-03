@@ -249,23 +249,26 @@ section {
 .l-muCard-ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    row-gap: 80px;
+    column-gap: 30px;
+}
+.l-mnCard > *{
+margin-bottom: 15px;
 }
 
 .l-mnCard-bs {
     font-weight: bold;
-    margin: 15px 0px;
 }
 
 .l-mnCard-title {
     font-weight: bold;
-    margin: 15px 0px;
 }
 
 .l-muCard-ul .l-mnCard-des {
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
+    height: 116px;
 }
 
 /* shops コンポーネント */
@@ -283,9 +286,8 @@ section {
 .c-mnCard-bs::before {
     content: url(../img/point.svg);
 }
-
-.c-mnCard-des dt {
-    width: 30%;
+.c-mnCard-des dt{
+    display: inline-block;
 }
 
 .c-mnCard-des dd {
@@ -295,6 +297,7 @@ section {
 .c-menu__small {
     font-size: 14px;
 }
+
 
 
 
