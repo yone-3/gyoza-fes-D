@@ -17,11 +17,11 @@
 <body>
     <header class="l-header">
         <div class="l-header-pc  c-header-top">
-            <h1 class="c-header-logo">
+            <p class="c-header-logo">
                 <a href="index.html">
                     <img class="pc-logo" src="/img/logo_line_01.svg" alt="ふくおか餃子FES">
                 </a>
-            </h1>
+            </p>
             <nav class="c-header-nav">
                 <ul class="c-header-nav__list">
                     <li><a href="information.html">フェスについて</a></li>
@@ -37,22 +37,22 @@
         </div>
 
         <div class="l-header-sp">
-            <h1 class="c-header-logo">
+            <p class="c-header-logo">
                 <a href="index.html">
                     <img src="/img/logo_line_01.svg" alt="ふくおか餃子FES">
                 </a>
-            </h1>
+            </p>
             <img class="hamburger-image" src="/img/hamburger.svg" alt="ハンバーガーメニュー">
             <!-- ハンバーガーメニューは教えてもらったら反映させるから一旦画像置くねん-->
         </div>
     </header>
 
     <main>
-        <section class="c-mv-sec">
+        <div class="c-mv-sec">
             <div class="c-mv-sec__img">
                 <img src="./img/mainvisual-image.png" alt="">
             </div>
-        </section>
+        </div>
 
         <section class="l-about-sec">
             <div class="l-about-inner l-wrapper">
@@ -107,63 +107,69 @@
                 </div>
             </div>
 
-            <div class="c-about-menu__pc l-wrapper c-about-pc">
-                <img src="./img/menu-pc.png" alt="出店店舗＆メニューはこちら">
-            </div>
-            <div class="c-about-menu__sp l-wrapper c-about-sp">
-                <img src="./img/menu-sp.png" alt="出店店舗＆メニューはこちら">
-            </div>
-        </section>
-
-        <section class="l-news-sec l-wrapper">
-            <h2 class="c-title">お知らせ</h2>
-            <div class="c-news-content">
-                <dl class="c-news-detail">
-                    <dt class="c-news-date">
-                        <time datetime="2030-02-25">2030.2.25</time>（月）
-                    </dt>
-                    <dd class="c-news-title">出店者インタビュー　博多区で人気の「博多ぎょうざ堂」</dd>
-                </dl>
-                <dl class="c-news-detail">
-                    <dt class="c-news-date">
-                        <time datetime="2030-02-23">2030.2.23</time>（土）
-                    </dt>
-                    <dd class="c-news-title">出店企業様決定！</dd>
-                </dl>
-                <dl class="c-news-detail">
-                    <dt class="c-news-date">
-                        <time datetime="2030-02-16">2030.2.16</time>（土）
-                    </dt>
-                    <dd class="c-news-title">出店企業様大募集中！</dd>
-                </dl>
-                <dl class="c-news-detail">
-                    <dt class="c-news-date">
-                        <time datetime="2030-02-16">2030.2.16</time>（土）
-                    </dt>
-                    <dd class="c-news-title">ふくおか餃子FES開催決定！</dd>
-                </dl>
-            </div>
-            <div class="c-btn c-btn__black">
-                <a href="#">VIEW MORE</a>
+            <div class="l-wrapper">
+                <div class="c-about-menu__pc c-about-pc">
+                    <img src="./img/menu-pc.png" alt="出店店舗＆メニューはこちら">
+                </div>
+                <div class="c-about-menu__sp c-about-sp">
+                    <img src="./img/menu-sp.png" alt="出店店舗＆メニューはこちら">
+                </div>
             </div>
         </section>
 
-        <section class="l-sns-sec">
-            <p>公式SNSをチェック!!</p>
-            <div class="c-btn c-btn__black">
-                <a href="#">
-                    <img src="./img/x-logo.svg" alt="">
-                </a>
+        <section class="l-wrapper">
+            <div class="l-news-sec">
+                <h2 class="c-title">お知らせ</h2>
+                <div class="c-news-content">
+                    <dl class="c-news-detail">
+                        <dt class="c-news-date">
+                            <time datetime="2030-02-25">2030.2.25</time>（月）
+                        </dt>
+                        <dd class="c-news-title">出店者インタビュー　博多区で人気の「博多ぎょうざ堂」</dd>
+                    </dl>
+                    <dl class="c-news-detail">
+                        <dt class="c-news-date">
+                            <time datetime="2030-02-23">2030.2.23</time>（土）
+                        </dt>
+                        <dd class="c-news-title">出店企業様決定！</dd>
+                    </dl>
+                    <dl class="c-news-detail">
+                        <dt class="c-news-date">
+                            <time datetime="2030-02-16">2030.2.16</time>（土）
+                        </dt>
+                        <dd class="c-news-title">出店企業様大募集中！</dd>
+                    </dl>
+                    <dl class="c-news-detail">
+                        <dt class="c-news-date">
+                            <time datetime="2030-02-16">2030.2.16</time>（土）
+                        </dt>
+                        <dd class="c-news-title">ふくおか餃子FES開催決定！</dd>
+                    </dl>
+                </div>
+                <div class="c-btn c-btn__black">
+                    <a href="#">VIEW MORE</a>
+                </div>
             </div>
-            <div class="c-btn c-btn__black">
-                <a href="#">
-                    <img src="./img/Instagram-logo.svg" alt="">
-                </a>
-            </div>
-            <div class="c-btn c-btn__black">
-                <a href="#">
-                    <img src="./img/youtube-logo.svg" alt="">
-                </a>
+        </section>
+
+        <section class="l-sns-sec l-wrapper">
+            <p class="c-sns-title">公式SNSをチェック!!</p>
+            <div class="c-sns-icon">
+                <div class="c-btn c-btn__sns">
+                    <a href="#">
+                        <img class="c-icon-white" src="./img/x-logo-white.svg" alt="">
+                    </a>
+                </div>
+                <div class="c-btn c-btn__sns">
+                    <a href="#">
+                        <img class="c-icon-white" src="./img/Instagram-logo-white.svg" alt="">
+                    </a>
+                </div>
+                <div class="c-btn c-btn__sns">
+                    <a href="#">
+                        <img class="c-icon-white" src="./img/youtube-logo-white.svg" alt="">
+                    </a>
+                </div>
             </div>
 
         </section>
