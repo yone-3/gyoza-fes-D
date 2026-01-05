@@ -454,8 +454,22 @@ button {
 }
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.c-info__title{
+    padding: 10px 10px 0px 10px;
+}
+
 .c-info__text {
     border-bottom: 2px var(--gyoza_red) solid;
+    padding: 10px;
+}
+
+.bill{
+    font-weight: bold;
+}
+
+.park{
+    font-weight: bold;
 }
 
 .info {
@@ -467,9 +481,10 @@ button {
 .map {
     width: 100%;
     height: 270px;
+    padding-top: 30px;
 }
 
-
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .c-menu_location {
     font-weight: bold;
