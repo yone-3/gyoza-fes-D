@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="福岡餃子FES！開催概要ページ。期間2040.4.27(日)～5.12(日)。会場：福岡市中央区舞鶴1-7長浜公園。入場無料！">
+    <meta name="robots" content="noindex, nofollow">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,28 +16,29 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-pc">
-            <h1>
+    <header class="l-header">
+        <div class="l-header-pc">
+            <p class="c-header-logo">
                 <a href="index.html">
                     <img class="pc-logo" src="/img/logo_line_01.svg" alt="ふくおか餃子FES">
                 </a>
-            </h1>
-            <nav class="pc-nav">
-                <ul>
+            </p>
+            <nav class="c-header-nav">
+                <ul class="c-header-nav__list">
                     <li><a href="information.html">フェスについて</a></li>
                     <li><a href="shops.html">出店店舗＆メニュー</a></li>
                     <li><a href="news.html">お知らせ</a></li>
                     <li><a href="faq.html">よくある質問</a></li>
-                    <li><a href="#"><img class="x-logo" src="/img/x-logo.svg" alt="x"></a></li>
-                    <li><a href="#"><img class="instagram-logo" src="/img/Instagram-logo.svg" alt="instagram"></a></li>
-                    <li><a href="#"><img class="youtube-logo" src="/img/youtube-logo.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img class="c-header-nav__x" src="/img/x-logo.svg" alt="x"></a></li>
+                    <li><a href="#"><img class="c-header-nav__insta" src="/img/Instagram-logo.svg" alt="instagram"></a>
+                    </li>
+                    <li><a href="#"><img class="c-header-nav__you" src="/img/youtube-logo.svg" alt="youtube"></a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="header-sp">
-            <h1>
+        <div class="l-header-sp">
+            <h1 class="c-header-logo">
                 <a href="index.html">
                     <img src="/img/logo_line_01.svg" alt="ふくおか餃子FES">
                 </a>
@@ -45,15 +48,73 @@
         </div>
     </header>
 
-    <main>
+
+    <main class="l-wrapper">
+        <section>
+            <h1 class="c-title">フェスについて</h1>
+            <h2 class="c-title__sub">開催概要</h2>
+
+            <dl>
+                <dt class="c-info__title">期間</dt>
+                <dd>2030.4.27 (日) ~ 5.12 (日)</dd>
+            </dl>
+            <dl>
+                <dt class="c-info__title">営業時間</dt>
+                <dd> 平日 16:00 ~ 22:00 <br>
+                    土日祝 11:00 ~ 22:00 <br>
+                    （最終入場 21:00 L.O. 21:15まで)</dd>
+            </dl>
+            <dl>
+                <dt class="c-info__title">料金</dt>
+                <dd>
+                    入場料無料<br>
+                    ※飲食代別途(現金、電子マネー、QRコード決済利用可) <br>
+                    ※電子マネーは会場内ではチャージができません。事前にチャージ頂いてからご来場ください。
+                </dd>
+            </dl>
+
+        </section>
+
+        <section>
+            <h2 class="c-title__sub">アクセス</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6646.910095870736!2d130.39412999999996!3d33.59349580000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541918916ac1a97%3A0x38ef1af8385772cc!2z6ZW35rWc5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1766647561228!5m2!1sja!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <dl>
+                <dt class="c-info__title">会場</dt>
+                <dd>長浜公園<br>
+                    〒810-0073　福岡市中央区舞鶴1丁目7</dd>
+            </dl>
+            <dl>
+                <dt class="c-info__title">アクセス</dt>
+                <dd>地下鉄天神駅・西鉄天神駅から徒歩10分<br>
+                    西鉄バス「長浜一丁目」「福祉センター前［浜の町病院入口］」徒歩2分</dd>
+            </dl>
+
+        </section>
+
+
+        <div>
+            <p>主催</p>
+            <p>ふくおか餃子FES実行委員会</p>
+            <p>協賛</p>
+            <p>九州餃子部</p>
+            <p>制作協力</p>
+            <p>創造社リカレントスクール福岡校</p>
+        </div>
+
+
         <!--  ↓ボタン使うならつかって！！-->
         <!-- 黒のボタン -->
-        <!-- <div class="btn-black">
+        <!-- <div class="c-btn c-btn__black">
                     <a href="#">VIEW E</a>
                 </div> -->
 
         <!--  赤のボタン-->
-        <!-- <div class="btn-red">
+        <!-- <div class="c-btn c-btn__red">
                     <a href="#">
                         詳細はこちら
                     </a>
@@ -61,14 +122,13 @@
 
     </main>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="contact.html">お問い合わせ</a></li>
-                <li>|</li>
-                <li><a href="privacy.html">プライバシーポリシー</a></li>
-            </ul>
-        </nav>
+    <footer class="l-footer">
+
+        <ul>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+        </ul>
+
 
         <small>&copy;ふくおか餃子FES実行委員会</small>
 
