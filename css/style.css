@@ -551,15 +551,16 @@ button {
 }
 
 /* praivacy コンポーネント */
-/* .c-pravacy-title::before {
+.c-pravacy-title::before {
     content: "";
     display: inline-block;
     width: 10px;
     height: 10px;
     background: var(--gyoza_red);
-} */
-.c-pravacy-title+p{
-    margin-bottom: 30px;
+}
+.l-pravacy{
+    padding: 0;
+    margin-bottom: 20px;
 }
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
