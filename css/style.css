@@ -601,16 +601,21 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
 }
 
 .c-menu_info dt {
+    font-size: 20px;
     display: inline-block;
     font-weight: normal;
 }
 
 .c-menu_info dd {
-    flex-basis: 85%;
+    font-size: 20px;
+    flex-basis: 80%;
 }
 
 .c-menu_shop {
     margin: 60px 0;
+}
+.c-menu_shop_desc{
+    font-size: 16px;
 }
 
 .c-menu_shop_title::before {
@@ -632,6 +637,9 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
 .l-pravacy{
     padding: 0;
     margin-bottom: 20px;
+}
+.l-pravacy ol{
+    list-style-type:decimal;
 }
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
@@ -823,7 +831,7 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
         height: 60px;
         font-size: 32px;
         font-weight: bold;
-        text-align: center;
+        align-items: center;
     }
 
     .c-title {
@@ -838,10 +846,12 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
     }
 
     .c-menu_info dt {
+        font-size: 20px;
         display: inline-block;
     }
 
     .c-menu_info dd {
+        font-size: 20px;
         flex-basis: 92%;
     }
 
