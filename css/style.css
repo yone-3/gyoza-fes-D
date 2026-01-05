@@ -18,7 +18,7 @@ body {
     font-size: 16px;
     color: var(--gyoza_black);
     background: var(--gyoza_white);
-    line-height: 180%;
+    line-height: 1.8;
 }
 
 img {
@@ -74,8 +74,8 @@ section {
     padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
-main>.c-title,
-div>.c-title {
+
+.c-title {
     /* font-size: 32px; */
     font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
@@ -186,6 +186,7 @@ div>.c-title {
     display: flex;
     justify-content: center;
     gap: 20px;
+    line-height: 1;
 }
 
 .l-footer li+li {
@@ -677,8 +678,9 @@ textarea {
         height: 24px;
     }
 
-    .c-title {
-        margin-block-start: 80px;
+    .c-title,
+    h1:has(.c-title) {
+        margin-top: 80px;
     }
 
 
