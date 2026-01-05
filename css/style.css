@@ -474,6 +474,15 @@ button {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 30px;
+}
+
+.info dt{
+    padding-bottom: 20px;
+}
+
+.host{
+    padding-bottom: 40px;
 }
 
 .map {
