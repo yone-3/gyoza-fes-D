@@ -450,7 +450,7 @@ button {
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
-.c-info__title{
+.c-info__title {
     padding: 10px 10px 0px 10px;
 }
 
@@ -459,11 +459,11 @@ button {
     padding: 10px;
 }
 
-.bill{
+.bill {
     font-weight: bold;
 }
 
-.park{
+.park {
     font-weight: bold;
 }
 
@@ -537,10 +537,15 @@ button {
     height: 10px;
     background: var(--gyoza_red);
 }
-/*praivacy コンポーネント */
-/* .c-pravacy-title p{
-    margin-bottom: 30px;
-} */
+
+/* praivacy コンポーネント */
+.c-pravacy-title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--gyoza_red);
+}
 
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
@@ -713,7 +718,9 @@ button {
 
     /* ここからshops_info */
     .c-menu_img {
-        height: 100%;
+        height: 720px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .c-menu_location {
