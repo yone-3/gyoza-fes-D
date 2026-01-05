@@ -361,13 +361,15 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 54px;
+    row-gap: 10px;
 }
 .l-infCard-lab{
     display: flex;
+    flex-basis: 250px;
     align-items: center;
     font-weight: bold;
     width: 100%;
-    padding: 10px;
+    
 
 }
 
@@ -415,7 +417,7 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
     border: 1px solid var(--gyoza_black);
     background-color: var(--white);
     width: 100%;
-   
+   padding: 10px;
 }
 
 
@@ -748,7 +750,7 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
     width: 27%;
 }
 input[type="text"],input[type="email"],input[type="tel"],textarea{
-    width: 73%;
+    width: calc(100% - 250px);
 }
 /* contactコンポーネント */
 
