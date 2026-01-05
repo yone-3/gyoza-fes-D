@@ -307,6 +307,9 @@ section {
 
 /* ここからfaqページ */
 /* faq レイアウト */
+.l-faqCard{
+    margin-top: 40px;
+}
 
 
 /* faqコンポーネント */
@@ -321,12 +324,15 @@ section {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .c-faqCard dd {
     margin-bottom: 30px;
     margin-left: 35px;
 }
+
+
 
 /* ここからshopsページ */
 /* shops レイアウト */
@@ -530,6 +536,7 @@ section {
 /* faqコンポーネント */
 .c-faqCard-q {
     margin-right: 20px;
+    font-size: 24px;
 }
 .c-faqCard dt {
     font-size: 24px;
