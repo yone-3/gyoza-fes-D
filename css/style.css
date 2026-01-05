@@ -532,11 +532,6 @@ textarea {
 }
 
 
-/* shops_info コンポーネント */
-.c-menu_img {
-    height: 259px;
-    object-fit: cover;
-}
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
@@ -578,6 +573,12 @@ textarea {
     padding-top: 30px;
 }
 
+/* shops_info コンポーネント */
+.c-menu_img {
+    height: 259px;
+    object-fit: cover;
+}
+
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .c-menu_location {
@@ -611,16 +612,21 @@ textarea {
 }
 
 .c-menu_info dt {
+    font-size: 20px;
     display: inline-block;
     font-weight: normal;
 }
 
 .c-menu_info dd {
-    flex-basis: 85%;
+    font-size: 20px;
+    flex-basis: 80%;
 }
 
 .c-menu_shop {
     margin: 60px 0;
+}
+.c-menu_shop_desc{
+    font-size: 16px;
 }
 
 .c-menu_shop_title::before {
@@ -631,7 +637,21 @@ textarea {
     background: var(--gyoza_red);
 }
 
-
+/* praivacy コンポーネント */
+.c-pravacy-title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--gyoza_red);
+}
+.l-pravacy{
+    padding: 0;
+    margin-bottom: 20px;
+}
+.l-pravacy ol{
+    list-style-type:decimal;
+}
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
 @media(min-width:768px) {
@@ -820,14 +840,16 @@ textarea {
 
     /* ここからshops_info */
     .c-menu_img {
-        height: 100%;
+        height: 720px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .c-menu_location {
         height: 60px;
         font-size: 32px;
         font-weight: bold;
-        text-align: center;
+        align-items: center;
     }
 
     .c-title {
@@ -842,10 +864,12 @@ textarea {
     }
 
     .c-menu_info dt {
+        font-size: 20px;
         display: inline-block;
     }
 
     .c-menu_info dd {
+        font-size: 20px;
         flex-basis: 92%;
     }
 
