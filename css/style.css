@@ -281,6 +281,9 @@ section {
 
 .l-mnCard-bs {
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
 }
 
 .l-mnCard-title {
@@ -313,7 +316,12 @@ section {
 
 /* imgのpoint画像がちょっと細いverになってる */
 .c-mnCard-bs::before {
-    content: url(../img/point.svg);
+    display: inline-block;
+    content: "";
+    width: 19px;
+    height: 26px;
+    background: url(../img/point.svg) no-repeat center center/100%;
+    
 }
 .c-mnCard-des dt {
     display: inline-block;
