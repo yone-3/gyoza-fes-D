@@ -345,10 +345,6 @@ section {
     height: 26px;
 }
 
-/* .c-menu_title{
-    font-size: 28px;
-} */
-
 .c-menu_desc {
     font-size: 20px;
     margin-bottom: 45px;
@@ -493,6 +489,20 @@ section {
     object-fit: cover;
     height: 225px;
 }
-
-
+/* ここからshops_info */
+.c-menu_img{
+    height: 100%;
+}
+.c-title{
+    margin: 0;
+}
+.c-menu_desc{
+    margin-top: 80px;
+}
+.c-menu_info dt{
+    display: inline-block;
+}
+.c-menu_info dd{
+    display: inline-block;
+}
 }
