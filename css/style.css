@@ -93,7 +93,7 @@ section {
 
 /* ボタン */
 .c-btn a {
-    display: inline-block;
+    display: block;
     font-weight: bold;
     color: var(--white);
     max-width: 300px;
@@ -127,6 +127,19 @@ section {
     border-radius: 7px;
 }
 
+.c-btn__sns {
+    width: 150px;
+    background: var(--gyoza_black);
+    color: var(--white);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.c-btn__sns img {
+    width: 30px;
+    height: 35px;
+}
+
 .l-footer {
     font-size: 14px;
     padding: 20px 0;
@@ -152,7 +165,25 @@ section {
 /* -----------------以下各ページごとのコーディング----------------- */
 
 /* ここからTOP / NEWSページ */
+.l-about-sec {
+    background: var(--gyoza_yellow);
+    padding-block: clamp(60px, 52.958px + 1.878vw, 80px);
+}
 
+.l-about-inner {
+    background: var(--white);
+    padding-block: 60px;
+    margin-block-end: 80px;
+}
+
+.l-news-sec {
+    background: var(--white);
+    padding-block-end: 60px;
+}
+
+.l-sns-sec {
+    background: var(--white);
+}
 
 .c-mv-sec {
     background: url(/img/mainvisual.jpg);
@@ -167,17 +198,6 @@ section {
     width: clamp(345px, 184.789px + 42.723vw, 800px);
     height: clamp(313px, 194.338px + 31.643vw, 650px);
     margin: 0 auto;
-}
-
-.l-about-sec {
-    background: var(--gyoza_yellow);
-    padding-block: clamp(60px, 52.958px + 1.878vw, 80px);
-}
-
-.l-about-inner {
-    background: var(--white);
-    padding-block: 60px;
-    margin-block-end: 80px;
 }
 
 .c-about-concept {
@@ -245,10 +265,6 @@ section {
     display: none;
 }
 
-.l-news-sec {
-    background: var(--white);
-    padding-block-end: 60px;
-}
 
 .c-news-detail {
     display: flex;
@@ -268,6 +284,24 @@ section {
     padding-block-end: clamp(30px, 12.394px + 4.695vw, 80px);
 }
 
+.c-sns-title {
+    font-size: clamp(28px, 25.183px + 0.751vw, 36px);
+    text-align: center;
+    font-weight: bold;
+    margin-block-end: 23px;
+}
+
+.c-sns-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-icon-white {
+    color: var(--white);
+}
 
 
 /* ここからfaqページ */
@@ -462,5 +496,11 @@ section {
 
     .c-news-date {
         padding-inline-start: 16px;
+    }
+
+    .c-sns-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 84px;
     }
 }
