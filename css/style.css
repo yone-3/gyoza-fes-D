@@ -236,6 +236,18 @@ button {
     margin: 0 auto;
 }
 
+.c-mv-stamp {
+    display: inline-block;
+    color: var(--white);
+    background: var(--gyoza_red);
+    padding: 20px;
+    border-radius: 40%;
+}
+
+.c-mv-stamp p {
+    text-align: center;
+}
+
 .c-about-concept {
     display: flex;
     flex-direction: column;
@@ -601,9 +613,9 @@ button {
         padding: 0 auto;
     } */
 
-    .c-mv-sec__img img {
+    /* .c-mv-sec__img img {
         padding-block-start: 117px;
-    }
+    } */
 
     .c-about-concept {
         padding-inline: 90px;
