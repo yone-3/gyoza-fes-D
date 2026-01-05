@@ -311,12 +311,13 @@ section {
 /* faqコンポーネント */
 .c-faqCard-q {
     font-weight: bold;
+    font-size: 20px;
     color: var(--gyoza_red);
     margin-right: 20px;
 }
 
 .c-faqCard dt {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -341,6 +342,9 @@ section {
 
 .l-mnCard-bs {
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
 }
 
 .l-mnCard-title {
@@ -373,7 +377,12 @@ section {
 
 /* imgのpoint画像がちょっと細いverになってる */
 .c-mnCard-bs::before {
-    content: url(../img/point.svg);
+    display: inline-block;
+    content: "";
+    width: 19px;
+    height: 26px;
+    background: url(../img/point.svg) no-repeat center center/100%;
+    
 }
 .c-mnCard-des dt {
     display: inline-block;
@@ -508,6 +517,23 @@ section {
         gap: 84px;
     }
 
+ /* ここからfaqページ */
+/* faq レイアウト */
+
+
+/* faqコンポーネント */
+.c-faqCard-q {
+    margin-right: 20px;
+}
+.c-faqCard dt {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.c-faqCard dd {
+    margin-bottom: 30px;
+    margin-left: 35px;
+}
+
 
     /* ここからshopsページ */
 .l-muCard-ul{
@@ -524,6 +550,8 @@ section {
     object-fit: cover;
     height: 225px;
 }
+
+
 
 
 }
