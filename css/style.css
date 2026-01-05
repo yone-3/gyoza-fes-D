@@ -8,6 +8,11 @@
     --gyoza_yellow: #ffe100;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Zen Maru Gothic", sans-serif;
     font-size: 16px;
@@ -93,7 +98,7 @@ section {
 
 /* ボタン */
 .c-btn a {
-    display: block;
+    display: inline-block;
     font-weight: bold;
     color: var(--white);
     max-width: 300px;
@@ -101,7 +106,7 @@ section {
     margin: 0 auto;
 }
 
-.c-btn a :hover {
+.c-btn a:hover {
     text-decoration: underline solid 1px var(--white);
 }
 
@@ -112,10 +117,12 @@ section {
 }
 
 .c-btn__black a {
+    display: inline-block;
     font-size: 20px;
     background: var(--gyoza_black);
     padding: 15px 85px;
     border-radius: 15px;
+    /* width: 122px; */
 }
 
 
@@ -135,9 +142,34 @@ section {
     text-align: center;
 }
 
+/* SNS */
 .c-btn__sns img {
     width: 30px;
     height: 35px;
+}
+
+/* TOPボタン */
+button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 50px;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    padding-top: 6px;
+    font-weight: bold;
+    color: var(--white);
+    background: var(--gyoza_red);
+    /* border: none; */
+    border-radius: 50%;
+    cursor: pointer;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    /* transition: .2s; */
+    letter-spacing: 1px;
 }
 
 .l-footer {
@@ -180,6 +212,7 @@ section {
 .l-news-sec {
     background: var(--white);
     padding-block-end: 60px;
+    padding-block-start: 60px
 }
 
 .l-sns-sec {
@@ -292,6 +325,10 @@ section {
     margin-block-end: 23px;
 }
 
+.c-news-title a:hover {
+    border-bottom: 1px solid var(--gyoza_black);
+}
+
 .c-sns-icon {
     display: flex;
     flex-direction: column;
@@ -385,7 +422,7 @@ section {
     width: 19px;
     height: 26px;
     background: url(../img/point.svg) no-repeat center center/100%;
-    
+
 }
 
 .c-mnCard-des dt {
@@ -469,6 +506,9 @@ section {
 
     /* TOP */
 
+    .l-news-sec {
+        padding-block-start: 0;
+    }
 
     .c-header-top {
         margin-block-end: 0;
@@ -523,22 +563,24 @@ section {
         gap: 84px;
     }
 
- /* ここからfaqページ */
-/* faq レイアウト */
+    /* ここからfaqページ */
+    /* faq レイアウト */
 
 
-/* faqコンポーネント */
-.c-faqCard-q {
-    margin-right: 20px;
-}
-.c-faqCard dt {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.c-faqCard dd {
-    margin-bottom: 30px;
-    margin-left: 35px;
-}
+    /* faqコンポーネント */
+    .c-faqCard-q {
+        margin-right: 20px;
+    }
+
+    .c-faqCard dt {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .c-faqCard dd {
+        margin-bottom: 30px;
+        margin-left: 35px;
+    }
 
 
     /* ここからshopsページ */
