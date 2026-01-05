@@ -391,7 +391,7 @@ section {
     width: 19px;
     height: 26px;
     background: url(../img/point.svg) no-repeat center center/100%;
-    
+
 }
 
 .c-mnCard-des dt {
@@ -405,6 +405,13 @@ section {
 
 .c-menu__small {
     font-size: 14px;
+}
+
+
+/* shops_info コンポーネント */
+.c-menu_img {
+    height: 259px;
+    object-fit: cover;
 }
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -425,6 +432,55 @@ text-align: center;
 
 
 
+.c-menu_location {
+    font-weight: bold;
+    display: flex;
+    text-align: left;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.c-menu_location img {
+    width: 19px;
+    height: 26px;
+}
+.c-title{
+    height: 80px;
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.c-menu_desc {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.c-menu_info {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.c-menu_info dt {
+    display: inline-block;
+    font-weight: normal;
+}
+
+.c-menu_info dd {
+    flex-basis: 85%;
+}
+
+.c-menu_shop {
+    margin: 60px 0;
+}
+
+.c-menu_shop_title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--gyoza_red);
+}
 
 
 /* -----------------PC共通部分----------------- */
@@ -545,8 +601,9 @@ text-align: center;
         gap: 84px;
     }
 
- /* ここからfaqページ */
-/* faq レイアウト */
+    /* ここからfaqページ */
+    /* faq レイアウト */
+
 
 
 /* faqコンポーネント */
@@ -562,6 +619,7 @@ text-align: center;
     margin-bottom: 30px;
     margin-left: 35px;
 }
+
 
 
     /* ここからshopsページ */
@@ -581,7 +639,38 @@ text-align: center;
         height: 225px;
     }
 
+    .l-muCard-ul .c-mnCard img {
+        width: 100%;
+        object-fit: cover;
+        height: 225px;
+    }
 
+    /* ここからshops_info */
+    .c-menu_img {
+        height: 100%;
+    }
+    .c-menu_location{
+        height: 60px;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .c-title {
+        height: 90px;
+        font-size: 36px;
+        padding-top: 0;
+        margin: 0;
+    }
 
+    .c-menu_desc {
+        margin-top: 80px;
+    }
 
+    .c-menu_info dt {
+        display: inline-block;
+    }
+
+    .c-menu_info dd {
+        flex-basis: 92%;
+    }
 }
