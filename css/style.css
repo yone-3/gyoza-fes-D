@@ -307,6 +307,9 @@ section {
 
 /* ここからfaqページ */
 /* faq レイアウト */
+.l-faqCard{
+    margin-top: 40px;
+}
 
 
 /* faqコンポーネント */
@@ -321,12 +324,15 @@ section {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .c-faqCard dd {
     margin-bottom: 30px;
     margin-left: 35px;
 }
+
+
 
 /* ここからshopsページ */
 /* shops レイアウト */
@@ -401,11 +407,30 @@ section {
     font-size: 14px;
 }
 
+
 /* shops_info コンポーネント */
 .c-menu_img {
     height: 259px;
     object-fit: cover;
 }
+
+/* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.c-info__text{
+    border-bottom: 2px var(--gyoza_red) solid;
+}
+
+.info{
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.map{
+    width: 100%;
+    height: 270px;
+}
+
+
 
 .c-menu_location {
     font-weight: bold;
@@ -580,20 +605,21 @@ section {
     /* faq レイアウト */
 
 
-    /* faqコンポーネント */
-    .c-faqCard-q {
-        margin-right: 20px;
-    }
 
-    .c-faqCard dt {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
+/* faqコンポーネント */
+.c-faqCard-q {
+    margin-right: 20px;
+    font-size: 24px;
+}
+.c-faqCard dt {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.c-faqCard dd {
+    margin-bottom: 30px;
+    margin-left: 35px;
+}
 
-    .c-faqCard dd {
-        margin-bottom: 30px;
-        margin-left: 35px;
-    }
 
 
     /* ここからshopsページ */
