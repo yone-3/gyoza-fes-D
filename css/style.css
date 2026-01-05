@@ -254,11 +254,13 @@ section {
     color: var(--gyoza_red);
     margin-right: 20px;
 }
-.c-faqCard dt{
+
+.c-faqCard dt {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 .c-faqCard dd {
     margin-bottom: 30px;
     margin-left: 35px;
@@ -272,8 +274,9 @@ section {
     row-gap: 80px;
     column-gap: 30px;
 }
-.l-mnCard > *{
-margin-bottom: 15px;
+
+.l-mnCard>* {
+    margin-bottom: 15px;
 }
 
 .l-mnCard-bs {
@@ -306,7 +309,8 @@ margin-bottom: 15px;
 .c-mnCard-bs::before {
     content: url(../img/point.svg);
 }
-.c-mnCard-des dt{
+
+.c-mnCard-des dt {
     display: inline-block;
 }
 
@@ -347,7 +351,7 @@ margin-bottom: 15px;
     .l-header-pc {
         display: flex;
         justify-content: space-between;
-        margin-block-end: 80px;
+        /* margin-block-end: 80px; */
     }
 
     .c-header-nav ul {
@@ -376,6 +380,11 @@ margin-bottom: 15px;
         width: 30px;
         height: 24px;
     }
+
+    .c-title {
+        margin-block-start: 80px;
+    }
+
 
     /* -----------------以下、各ページ設定----------------- */
 
