@@ -225,7 +225,7 @@ button {
     background: url(/img/mainvisual.jpg);
     background-size: cover;
     object-fit: cover;
-    /* padding-block-start: 68px; */
+    padding-block-start: 68px;
     /* padding-block-end: 200px; */
     height: clamp(580px, 474.366px + 28.169vw, 880px);
 }
