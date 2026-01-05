@@ -344,6 +344,9 @@ button {
 
 /* ここからfaqページ */
 /* faq レイアウト */
+.l-faqCard {
+    margin-top: 40px;
+}
 
 
 /* faqコンポーネント */
@@ -358,12 +361,15 @@ button {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .c-faqCard dd {
     margin-bottom: 30px;
     margin-left: 35px;
 }
+
+
 
 /* ここからshopsページ */
 /* shops レイアウト */
@@ -439,7 +445,80 @@ button {
 }
 
 
+/* shops_info コンポーネント */
+.c-menu_img {
+    height: 259px;
+    object-fit: cover;
+}
 
+/* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.c-info__text {
+    border-bottom: 2px var(--gyoza_red) solid;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    height: 270px;
+}
+
+
+
+.c-menu_location {
+    font-weight: bold;
+    display: flex;
+    text-align: left;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.c-menu_location img {
+    width: 19px;
+    height: 26px;
+}
+
+.c-title {
+    height: 80px;
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.c-menu_desc {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.c-menu_info {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.c-menu_info dt {
+    display: inline-block;
+    font-weight: normal;
+}
+
+.c-menu_info dd {
+    flex-basis: 85%;
+}
+
+.c-menu_shop {
+    margin: 60px 0;
+}
+
+.c-menu_shop_title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--gyoza_red);
+}
 
 
 /* -----------------PC共通部分----------------- */
@@ -567,9 +646,12 @@ button {
     /* faq レイアウト */
 
 
+
+
     /* faqコンポーネント */
     .c-faqCard-q {
         margin-right: 20px;
+        font-size: 24px;
     }
 
     .c-faqCard dt {
@@ -581,6 +663,8 @@ button {
         margin-bottom: 30px;
         margin-left: 35px;
     }
+
+
 
 
     /* ここからshopsページ */
@@ -600,7 +684,40 @@ button {
         height: 225px;
     }
 
+    .l-muCard-ul .c-mnCard img {
+        width: 100%;
+        object-fit: cover;
+        height: 225px;
+    }
 
+    /* ここからshops_info */
+    .c-menu_img {
+        height: 100%;
+    }
 
+    .c-menu_location {
+        height: 60px;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+    }
 
+    .c-title {
+        height: 90px;
+        font-size: 36px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .c-menu_desc {
+        margin-top: 80px;
+    }
+
+    .c-menu_info dt {
+        display: inline-block;
+    }
+
+    .c-menu_info dd {
+        flex-basis: 92%;
+    }
 }
