@@ -74,16 +74,18 @@ section {
     padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
-.c-title {
+main>.c-title,
+div>.c-title {
     /* font-size: 32px; */
     font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
-    padding-block-end: 30px;
+    padding-block: 30px;
     border-block-end: 3px solid var(--gyoza_red);
     /* margin-block-end: 60px; */
     margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
     text-align: center;
 }
+
 
 .c-title__sub {
     /* font-size: 24px; */
@@ -154,10 +156,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 50px;
-    bottom: 50px;
-    width: 100px;
-    height: 100px;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
     font-size: 16px;
     padding-top: 6px;
     font-weight: bold;
@@ -577,7 +579,7 @@ button {
     }
 
     .c-title {
-        padding-block-start: 80px;
+        margin-block-start: 80px;
     }
 
 
