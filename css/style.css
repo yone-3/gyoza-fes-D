@@ -445,11 +445,6 @@ button {
 }
 
 
-/* shops_info コンポーネント */
-.c-menu_img {
-    height: 259px;
-    object-fit: cover;
-}
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .c-info__text {
@@ -467,7 +462,11 @@ button {
     height: 270px;
 }
 
-
+/* shops_info コンポーネント */
+.c-menu_img {
+    height: 259px;
+    object-fit: cover;
+}
 
 .c-menu_location {
     font-weight: bold;
@@ -519,7 +518,10 @@ button {
     height: 10px;
     background: var(--gyoza_red);
 }
-
+/*praivacy コンポーネント */
+/* .c-pravacy-title p{
+    margin-bottom: 30px;
+} */
 
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
