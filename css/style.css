@@ -322,6 +322,7 @@ section {
     font-size: 14px;
 }
 
+/* shops_info コンポーネント */
 .c-menu_img {
     height: 259px;
     object-fit: cover;
@@ -349,8 +350,19 @@ section {
     margin-bottom: 45px;
 }
 
+.c-menu_info {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
 .c-menu_info dt {
+    display: inline-block;
     font-weight: normal;
+}
+
+.c-menu_info dd {
+    flex-basis: 85%;
 }
 
 .c-menu_shop {
