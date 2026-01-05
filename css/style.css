@@ -875,36 +875,13 @@ textarea {
 
 
 /* pc版info-------------------------------------------------------------------------------- */
-
-.c-info__title{
-    padding: 10px 10px 0px 10px;
-}
-
-.c-info__text {
-    border-bottom: 2px var(--gyoza_red) solid;
-    padding: 10px;
-}
-
-
 .info {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.info dt{
-    padding-bottom: 20px;
-}
-
-.host{
-    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .map {
-    width: 100%;
-    height: 270px;
-    padding-top: 30px;
+    height: 321px;
+    padding-top: 40px;
 }
 
 
