@@ -158,8 +158,9 @@ section {
     background: url(/img/mainvisual.jpg);
     background-size: cover;
     object-fit: cover;
-    padding-block-start: 68px;
-    padding-block-end: 200px;
+    /* padding-block-start: 68px; */
+    /* padding-block-end: 200px; */
+    height: clamp(580px, 474.366px + 28.169vw, 880px);
 }
 
 .c-mv-sec__img {
@@ -231,7 +232,7 @@ section {
     font-size: 24px;
 }
 
-.c-about-detaol__address {
+.c-about-detail__address {
     text-align: left;
 }
 
@@ -243,6 +244,31 @@ section {
 .c-about-pc {
     display: none;
 }
+
+.l-news-sec {
+    background: var(--white);
+    padding-block-end: 60px;
+}
+
+.c-news-detail {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dotted var(--gyoza_red);
+    padding: 20px 15px;
+    background: var(--white);
+}
+
+.c-news-date {
+    /* padding-inline-start: 16px; */
+    font-weight: normal;
+    width: 162px;
+}
+
+.c-news-content {
+    padding-block-end: clamp(30px, 12.394px + 4.695vw, 80px);
+}
+
+
 
 /* ここからfaqページ */
 /* faq レイアウト */
@@ -382,19 +408,27 @@ section {
     }
 
     .c-title {
-        margin-block-start: 80px;
+        padding-block-start: 80px;
     }
 
 
     /* -----------------以下、各ページ設定----------------- */
 
     /* TOP */
+
+
     .c-header-top {
         margin-block-end: 0;
     }
 
-    .c-mv-sec__img {
-        margin: 117px auto;
+
+
+    /* .c-mv-sec__img {
+        padding: 0 auto;
+    } */
+
+    .c-mv-sec__img img {
+        padding-block-start: 117px;
     }
 
     .c-about-concept {
@@ -419,6 +453,14 @@ section {
     }
 
     .c-about-pc {
-        display: inline-block;
+        display: block;
+    }
+
+    .c-news-detail {
+        flex-direction: row;
+    }
+
+    .c-news-date {
+        padding-inline-start: 16px;
     }
 }
