@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="l-header">
+    <header class="l-header" id="top">
         <div class="l-header-pc  c-header-top">
             <p class="c-header-logo">
                 <a href="index.html">
@@ -28,10 +28,10 @@
                     <li><a href="shops.html">出店店舗＆メニュー</a></li>
                     <li><a href="news.html">お知らせ</a></li>
                     <li><a href="faq.html">よくある質問</a></li>
-                    <li><a href="#"><img class="c-header-nav__x" src="/img/x-logo.svg" alt="x"></a></li>
-                    <li><a href="#"><img class="c-header-nav__insta" src="/img/Instagram-logo.svg" alt="instagram"></a>
+                    <li><a href="#"><img class="c-header-nav__x" src="./img/x-logo.svg" alt="x"></a></li>
+                    <li><a href="#"><img class="c-header-nav__insta" src="./img/Instagram-logo.svg" alt="instagram"></a>
                     </li>
-                    <li><a href="#"><img class="c-header-nav__you" src="/img/youtube-logo.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img class="c-header-nav__you" src="./img/youtube-logo.svg" alt="youtube"></a></li>
                 </ul>
             </nav>
         </div>
@@ -39,7 +39,7 @@
         <div class="l-header-sp">
             <p class="c-header-logo">
                 <a href="index.html">
-                    <img src="/img/logo_line_01.svg" alt="ふくおか餃子FES">
+                    <img src="./img/logo_line_01.svg" alt="ふくおか餃子FES">
                 </a>
             </p>
             <img class="hamburger-image" src="/img/hamburger.svg" alt="ハンバーガーメニュー">
@@ -63,24 +63,26 @@
                 </div> -->
 
         <h1 class="c-title">お問い合わせ</h1>
-        <form action="#" method="post">
-            <div class="c-infCard">
-                <label for="user_name">お名前<span>必須</span></label>
+        <form action="#" method="post" class="l-inf-form">
+            <div class="c-infCard l-infCard">
+                <label for="user_name" class="l-infCard-lab">お名前<span class="l-infCard-req">必須</span></label>
                 <input type="text" name="user_name" id="user_name" required>
             </div>
-            <div class="c-infCard">
-                <label for="user_email">メールアドレス<span>必須</span></label>
+            <div class="c-infCard l-infCard">
+                <label for="user_email" class="l-infCard-lab">メールアドレス<span class="l-infCard-req">必須</span></label>
                 <input type="email" name="user_email" id="user_email" required>
             </div>
-            <div class="c-infCard">
-                <label for="user_tel">電話番号</label>
+            <div class="c-infCard l-infCard">
+                <label for="user_tel" class="l-infCard-lab">電話番号</label>
                 <input type="tel" name="user_tel" id="user_tel">
             </div>
-            <div class="c-infCard">
-                <label for="uese_mes">お問い合わせ内容<span>必須</span></label>
+            <div class="c-infCard l-infCard">
+                <label for="uese_mes" class="l-infCard-lab l-infCard-lab-q">お問い合わせ内容<span
+                        class="l-infCard-req">必須</span></label>
                 <textarea name="message" id="uese_mes" required></textarea>
             </div>
-            <input type="submit" value="送信">
+            <div class="c-contact__btn"><input type="submit" value="送信" class="l-infCard-btn"></div>
+            <!-- <input type="submit" value="送信" class="c-btn"> -->
 
         </form>
 

@@ -18,7 +18,7 @@ body {
     font-size: 16px;
     color: var(--gyoza_black);
     background: var(--gyoza_white);
-    line-height: 180%;
+    line-height: 1.8;
 }
 
 img {
@@ -74,16 +74,18 @@ section {
     padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
+
 .c-title {
     /* font-size: 32px; */
     font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
-    padding-block-end: 30px;
+    padding-block: 30px;
     border-block-end: 3px solid var(--gyoza_red);
     /* margin-block-end: 60px; */
     margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
     text-align: center;
 }
+
 
 .c-title__sub {
     /* font-size: 24px; */
@@ -149,17 +151,17 @@ section {
 }
 
 /* TOPボタン */
-button {
+.c-btn-jump {
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 50px;
-    bottom: 50px;
-    width: 100px;
-    height: 100px;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
     font-size: 16px;
-    padding-top: 6px;
+    /* padding-top: 6px; */
     font-weight: bold;
     color: var(--white);
     background: var(--gyoza_red);
@@ -184,6 +186,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 20px;
+    line-height: 1;
 }
 
 .l-footer li+li {
@@ -223,7 +226,7 @@ button {
     background: url(/img/mainvisual.jpg);
     background-size: cover;
     object-fit: cover;
-    /* padding-block-start: 68px; */
+    padding-block-start: 68px;
     /* padding-block-end: 200px; */
     height: clamp(580px, 474.366px + 28.169vw, 880px);
 }
@@ -232,6 +235,18 @@ button {
     width: clamp(345px, 184.789px + 42.723vw, 800px);
     height: clamp(313px, 194.338px + 31.643vw, 650px);
     margin: 0 auto;
+}
+
+.c-mv-stamp {
+    display: inline-block;
+    color: var(--white);
+    background: var(--gyoza_red);
+    padding: 20px;
+    border-radius: 40%;
+}
+
+.c-mv-stamp p {
+    text-align: center;
 }
 
 .c-about-concept {
@@ -341,6 +356,79 @@ button {
     color: var(--white);
 }
 
+/* ここからcontactページ */
+/*contactレイアウト  */
+.l-infCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 54px;
+}
+
+.l-infCard-lab {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.l-inf-form>.l-infCard:nth-of-type(4) {
+    align-items: flex-start;
+
+}
+
+.l-infCard-lab-q {
+    align-items: flex-start;
+}
+
+.l-infCard-req {
+    display: inline-block;
+    align-items: center;
+    color: var(--white);
+    font-size: 14px;
+    background: var(--gyoza_red);
+    padding: 0px 10px;
+    border-radius: 14px;
+    margin-left: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    height: 50px;
+}
+
+textarea {
+    height: 170px;
+}
+
+.c-contact__btn {
+    /* display: block; */
+    text-align: center;
+}
+
+.l-infCard-btn {
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    background: var(--gyoza_black);
+    padding: 15px 85px;
+    border-radius: 15px;
+}
+
+/* contactコンポーネント */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 1px solid var(--gyoza_black);
+    background-color: var(--white);
+    width: 100%;
+
+}
+
+
 
 /* ここからfaqページ */
 /* faq レイアウト */
@@ -421,7 +509,6 @@ button {
     height: 259px;
 }
 
-/* imgのpoint画像がちょっと細いverになってる */
 .c-mnCard-bs::before {
     display: inline-block;
     content: "";
@@ -445,15 +532,10 @@ button {
 }
 
 
-/* shops_info コンポーネント */
-.c-menu_img {
-    height: 259px;
-    object-fit: cover;
-}
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
-.c-info__title{
+.c-info__title {
     padding: 10px 10px 0px 10px;
 }
 
@@ -462,11 +544,11 @@ button {
     padding: 10px;
 }
 
-.bill{
+.bill {
     font-weight: bold;
 }
 
-.park{
+.park {
     font-weight: bold;
 }
 
@@ -489,6 +571,12 @@ button {
     width: 100%;
     height: 270px;
     padding-top: 30px;
+}
+
+/* shops_info コンポーネント */
+.c-menu_img {
+    height: 259px;
+    object-fit: cover;
 }
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -524,16 +612,21 @@ button {
 }
 
 .c-menu_info dt {
+    font-size: 20px;
     display: inline-block;
     font-weight: normal;
 }
 
 .c-menu_info dd {
-    flex-basis: 85%;
+    font-size: 20px;
+    flex-basis: 80%;
 }
 
 .c-menu_shop {
     margin: 60px 0;
+}
+.c-menu_shop_desc{
+    font-size: 16px;
 }
 
 .c-menu_shop_title::before {
@@ -544,7 +637,21 @@ button {
     background: var(--gyoza_red);
 }
 
-
+/* praivacy コンポーネント */
+.c-pravacy-title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--gyoza_red);
+}
+.l-pravacy{
+    padding: 0;
+    margin-bottom: 20px;
+}
+.l-pravacy ol{
+    list-style-type:decimal;
+}
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
 @media(min-width:768px) {
@@ -600,8 +707,9 @@ button {
         height: 24px;
     }
 
-    .c-title {
-        padding-block-start: 80px;
+    .c-title,
+    h1:has(.c-title) {
+        margin-top: 80px;
     }
 
 
@@ -623,9 +731,9 @@ button {
         padding: 0 auto;
     } */
 
-    .c-mv-sec__img img {
+    /* .c-mv-sec__img img {
         padding-block-start: 117px;
-    }
+    } */
 
     .c-about-concept {
         padding-inline: 90px;
@@ -665,6 +773,22 @@ button {
         flex-direction: row;
         gap: 84px;
     }
+
+    /* ここからcontact */
+    /* contactレイアウト */
+    .l-infCard .l-infCard-lab {
+        font-weight: bold;
+        width: 27%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 73%;
+    }
+
+    /* contactコンポーネント */
 
     /* ここからfaqページ */
     /* faq レイアウト */
@@ -716,14 +840,16 @@ button {
 
     /* ここからshops_info */
     .c-menu_img {
-        height: 100%;
+        height: 720px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .c-menu_location {
         height: 60px;
         font-size: 32px;
         font-weight: bold;
-        text-align: center;
+        align-items: center;
     }
 
     .c-title {
@@ -738,10 +864,12 @@ button {
     }
 
     .c-menu_info dt {
+        font-size: 20px;
         display: inline-block;
     }
 
     .c-menu_info dd {
+        font-size: 20px;
         flex-basis: 92%;
     }
 
