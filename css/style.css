@@ -367,14 +367,16 @@ section {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 54px;
+    row-gap: 10px;
 }
 
 .l-infCard-lab {
     display: flex;
+    flex-basis: 250px;
     align-items: center;
     font-weight: bold;
     width: 100%;
-    padding: 10px;
+    
 
 }
 
@@ -430,7 +432,7 @@ textarea {
     border: 1px solid var(--gyoza_black);
     background-color: var(--white);
     width: 100%;
-
+   padding: 10px;
 }
 
 
@@ -804,22 +806,16 @@ textarea {
         flex-direction: row;
         gap: 84px;
     }
-
-    /* ここからcontact */
-    /* contactレイアウト */
-    .l-infCard .l-infCard-lab {
-        font-weight: bold;
-        width: 27%;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea {
-        width: 73%;
-    }
-
-    /* contactコンポーネント */
+/* ここからcontact */
+/* contactレイアウト */
+.l-infCard .l-infCard-lab{
+    font-weight: bold;
+    width: 27%;
+}
+input[type="text"],input[type="email"],input[type="tel"],textarea{
+    width: calc(100% - 250px);
+}
+/* contactコンポーネント */
 
     /* ここからfaqページ */
     /* faq レイアウト */
