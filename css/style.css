@@ -652,6 +652,10 @@ textarea {
 .l-pravacy ol{
     list-style-type:decimal;
 }
+.l-pravacy ul{
+    text-indent: -1em;
+    padding-left: 1em;
+}
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
 @media(min-width:768px) {
