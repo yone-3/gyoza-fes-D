@@ -79,10 +79,7 @@ section {
     /* font-size: 32px; */
     font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
-    padding-block: 30px;
     border-block-end: 3px solid var(--gyoza_red);
-    /* margin-block-end: 60px; */
-    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
     text-align: center;
 }
 
@@ -559,11 +556,11 @@ textarea {
     padding-top: 30px;
 }
 
-.info dt{
+.info dt {
     padding-bottom: 20px;
 }
 
-.host{
+.host {
     padding-bottom: 40px;
 }
 
@@ -594,11 +591,7 @@ textarea {
     height: 26px;
 }
 
-.c-title {
-    height: 80px;
-    font-size: 28px;
-    padding-bottom: 30px;
-}
+
 
 .c-menu_desc {
     font-size: 20px;
@@ -625,7 +618,8 @@ textarea {
 .c-menu_shop {
     margin: 60px 0;
 }
-.c-menu_shop_desc{
+
+.c-menu_shop_desc {
     font-size: 16px;
 }
 
@@ -645,13 +639,16 @@ textarea {
     height: 10px;
     background: var(--gyoza_red);
 }
-.l-pravacy{
+
+.l-pravacy {
     padding: 0;
     margin-bottom: 20px;
 }
-.l-pravacy ol{
-    list-style-type:decimal;
+
+.l-pravacy ol {
+    list-style-type: decimal;
 }
+
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
 @media(min-width:768px) {
@@ -707,9 +704,8 @@ textarea {
         height: 24px;
     }
 
-    .c-title,
-    h1:has(.c-title) {
-        margin-top: 80px;
+    .c-title {
+        /* padding-top: 80px; */
     }
 
 
@@ -852,12 +848,7 @@ textarea {
         align-items: center;
     }
 
-    .c-title {
-        height: 90px;
-        font-size: 36px;
-        padding-top: 0;
-        margin: 0;
-    }
+
 
     .c-menu_desc {
         margin-top: 80px;
@@ -874,50 +865,47 @@ textarea {
     }
 
 
-/* pc版info-------------------------------------------------------------------------------- */
-.info {
-    padding-top: 40px;
+    /* pc版info-------------------------------------------------------------------------------- */
+    .info {
+        padding-top: 40px;
+    }
+
+    .map {
+        height: 321px;
+        padding-top: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-.map {
-    height: 321px;
-    padding-top: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-}
-
-
-
