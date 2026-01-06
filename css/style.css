@@ -658,10 +658,16 @@ textarea {
     list-style-type: decimal;
     padding-left: 2em;
 }
+.l-pravacy ol ol{
+    list-style-type:lower-alpha;
+}
 
-.l-pravacy li {
-    /* text-indent: -1em; */
+.l-pravacy ul {
+    list-style-type:lower-alpha;
     padding-left: 1em
+}
+.l-pravacy ul ul{
+    list-style-type: lower-roman;
 }
 
 /* -----------------PC共通部分----------------- */
