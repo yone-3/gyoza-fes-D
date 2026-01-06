@@ -81,6 +81,9 @@ section {
     font-weight: bold;
     border-block-end: 3px solid var(--gyoza_red);
     text-align: center;
+    padding-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+    padding-block-end: 30px;
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 
@@ -184,6 +187,7 @@ section {
     justify-content: center;
     gap: 20px;
     line-height: 1;
+    margin-block-end: 10px;
 }
 
 .l-footer li+li {
@@ -205,18 +209,19 @@ section {
 
 .l-about-inner {
     background: var(--white);
-    padding-block: 60px;
+    padding-block-end: 60px;
     margin-block-end: 80px;
 }
 
 .l-news-sec {
     background: var(--white);
     padding-block-end: 60px;
-    padding-block-start: 60px
+    /* padding-block-start: 60px */
 }
 
 .l-sns-sec {
     background: var(--white);
+    padding-block: 30px;
 }
 
 .c-mv-sec {
@@ -264,7 +269,7 @@ section {
     color: var(--gyoza_red);
 }
 
-.c-about-detail {
+.c-about-detail__top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -704,9 +709,9 @@ textarea {
         height: 24px;
     }
 
-    .c-title {
-        /* padding-top: 80px; */
-    }
+    /* .c-title {
+        padding-top: 80px;
+    } */
 
 
     /* -----------------以下、各ページ設定----------------- */
@@ -735,14 +740,14 @@ textarea {
         padding-inline: 90px;
     }
 
-    .c-about-detail {
+    .c-about-detail__top {
         margin-block-end: 80px;
         flex-direction: row;
     }
 
     .c-about-list dl {
         width: 440px;
-        height: 353px;
+        height: 413px;
         padding-block: 30px;
         border-top: 1px solid var(--gyoza_black);
         border-bottom: 1px solid var(--gyoza_black);
@@ -874,38 +879,6 @@ textarea {
         height: 321px;
         padding-top: 40px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
