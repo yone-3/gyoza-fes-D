@@ -81,6 +81,9 @@ section {
     font-weight: bold;
     border-block-end: 3px solid var(--gyoza_red);
     text-align: center;
+    padding-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+    padding-block-end: 30px;
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 
@@ -184,6 +187,7 @@ section {
     justify-content: center;
     gap: 20px;
     line-height: 1;
+    margin-block-end: 10px;
 }
 
 .l-footer li+li {
@@ -205,18 +209,19 @@ section {
 
 .l-about-inner {
     background: var(--white);
-    padding-block: 60px;
+    padding-block-end: 60px;
     margin-block-end: 80px;
 }
 
 .l-news-sec {
     background: var(--white);
     padding-block-end: 60px;
-    padding-block-start: 60px
+    /* padding-block-start: 60px */
 }
 
 .l-sns-sec {
     background: var(--white);
+    padding-block: 30px;
 }
 
 .c-mv-sec {
@@ -264,12 +269,14 @@ section {
     color: var(--gyoza_red);
 }
 
-.c-about-detail {
+.c-about-detail__top {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
+
+
 
 .c-about-list dl {
     text-align: center;
@@ -461,8 +468,7 @@ textarea {
 /* ここからshopsページ */
 /* shops レイアウト */
 .l-muCard-ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     row-gap: 60px;
 
 }
@@ -486,7 +492,7 @@ textarea {
     margin: 15px 0px;
     display: flex;
     flex-wrap: wrap;
-    height: 116px;
+    min-height: 116px;
 }
 
 .l-muCard-ul .l-mnCard-des dt {
@@ -499,13 +505,13 @@ textarea {
 
 /* shops コンポーネント */
 .l-muCard-ul .c-mnCard {
-    width: 346px;
+    width: 100%;
 }
 
 .l-muCard-ul .c-mnCard img {
     width: 100%;
     object-fit: cover;
-    height: 259px;
+    height: 69vw;
 }
 
 .c-mnCard-bs::before {
@@ -523,7 +529,7 @@ textarea {
 }
 
 .c-mnCard-des dd {
-    width: 83%;
+    width: calc(100% - 50px);
 }
 
 .c-menu__small {
@@ -643,12 +649,26 @@ textarea {
 }
 
 .l-pravacy {
+    font-size: 14px;
     padding: 0;
     margin-bottom: 20px;
 }
 
+
 .l-pravacy ol {
     list-style-type: decimal;
+    padding-left: 2em;
+}
+.l-pravacy ol ol{
+    list-style-type:lower-alpha;
+}
+
+.l-pravacy ul {
+    list-style-type:lower-alpha;
+    padding-left: 1em
+}
+.l-pravacy ul ul{
+    list-style-type: lower-roman;
 }
 
 /* -----------------PC共通部分----------------- */
@@ -705,10 +725,10 @@ textarea {
         width: 30px;
         height: 24px;
     }
+    /* .c-titlec .c-menu_title{
 
-    .c-title {
-        /* padding-top: 80px; */
-    }
+        padding-top: 80px;
+    } */
 
 
     /* -----------------以下、各ページ設定----------------- */
@@ -737,14 +757,14 @@ textarea {
         padding-inline: 90px;
     }
 
-    .c-about-detail {
+    .c-about-detail__top {
         margin-block-end: 80px;
         flex-direction: row;
     }
 
     .c-about-list dl {
         width: 440px;
-        height: 353px;
+        height: 413px;
         padding-block: 30px;
         border-top: 1px solid var(--gyoza_black);
         border-bottom: 1px solid var(--gyoza_black);
@@ -808,20 +828,18 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
 
 
     /* ここからshopsページ */
+    /* shopsレイアウト */
     .l-muCard-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         row-gap: 80px;
         column-gap: 30px;
     }
 
     /* shops コンポーネント */
     .l-muCard-ul .c-mnCard {
-        width: 300px;
-    }
-
-    .l-muCard-ul .c-mnCard img {
         width: 100%;
-        object-fit: cover;
-        height: 225px;
     }
 
     .l-muCard-ul .c-mnCard img {
@@ -862,6 +880,25 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
 
 
     /* pc版info-------------------------------------------------------------------------------- */
+
+
+    .c-info__list {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .c-info__title {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px var(--gyoza_red) solid;
+        padding: 30px;
+    }
+
+    .c-info__text {
+        padding: 30px;
+    }
+
+
     .info {
         padding-top: 40px;
     }
@@ -870,37 +907,6 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
         height: 321px;
         padding-top: 40px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
