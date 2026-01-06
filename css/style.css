@@ -646,12 +646,20 @@ textarea {
 }
 
 .l-pravacy {
+    font-size: 14px;
     padding: 0;
     margin-bottom: 20px;
 }
 
+
 .l-pravacy ol {
     list-style-type: decimal;
+    padding-left: 2em;
+}
+
+.l-pravacy li {
+    /* text-indent: -1em; */
+    padding-left: 1em
 }
 
 /* -----------------PC共通部分----------------- */
@@ -708,8 +716,8 @@ textarea {
         width: 30px;
         height: 24px;
     }
+    /* .c-titlec .c-menu_title{
 
-    /* .c-title {
         padding-top: 80px;
     } */
 
