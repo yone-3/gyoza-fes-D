@@ -573,13 +573,16 @@ textarea {
     padding-top: 30px;
 }
 
+/* info終了ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+
 /* shops_info コンポーネント */
 .c-menu_img {
     height: 259px;
     object-fit: cover;
 }
 
-/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
 
 .c-menu_location {
     font-weight: bold;
@@ -879,7 +882,7 @@ textarea {
 
 .c-info__list{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 17.5% 82.5%;
 }
 
 .c-info__title{
