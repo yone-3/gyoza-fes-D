@@ -273,21 +273,20 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
 
 }
+
+
 
 .c-about-list dl {
     text-align: center;
 }
 
-
-
 .c-about-list dd {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(17px, 14.183px + 0.751vw, 25px);
+    gap: 25px;
 }
 
 .c-about-detail__title {
@@ -367,16 +366,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 54px;
-    row-gap: 10px;
 }
 
 .l-infCard-lab {
     display: flex;
-    flex-basis: 250px;
     align-items: center;
     font-weight: bold;
     width: 100%;
-    
+    padding: 10px;
 
 }
 
@@ -432,7 +429,7 @@ textarea {
     border: 1px solid var(--gyoza_black);
     background-color: var(--white);
     width: 100%;
-   padding: 10px;
+
 }
 
 
@@ -469,7 +466,8 @@ textarea {
 /* ここからshopsページ */
 /* shops レイアウト */
 .l-muCard-ul {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 60px;
 
 }
@@ -493,7 +491,7 @@ textarea {
     margin: 15px 0px;
     display: flex;
     flex-wrap: wrap;
-    min-height: 116px;
+    height: 116px;
 }
 
 .l-muCard-ul .l-mnCard-des dt {
@@ -506,13 +504,13 @@ textarea {
 
 /* shops コンポーネント */
 .l-muCard-ul .c-mnCard {
-    width: 100%;
+    width: 346px;
 }
 
 .l-muCard-ul .c-mnCard img {
     width: 100%;
     object-fit: cover;
-    height: 69vw;
+    height: 259px;
 }
 
 .c-mnCard-bs::before {
@@ -530,7 +528,7 @@ textarea {
 }
 
 .c-mnCard-des dd {
-    width: calc(100% - 50px);
+    width: 83%;
 }
 
 .c-menu__small {
@@ -579,13 +577,16 @@ textarea {
     padding-top: 30px;
 }
 
+/* info終了ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+
 /* shops_info コンポーネント */
 .c-menu_img {
     height: 259px;
     object-fit: cover;
 }
 
-/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
 
 .c-menu_location {
     font-weight: bold;
@@ -660,16 +661,10 @@ textarea {
     list-style-type: decimal;
     padding-left: 2em;
 }
-.l-pravacy ol ol{
-    list-style-type:lower-alpha;
-}
 
-.l-pravacy ul {
-    list-style-type:lower-alpha;
+.l-pravacy li {
+    /* text-indent: -1em; */
     padding-left: 1em
-}
-.l-pravacy ul ul{
-    list-style-type: lower-roman;
 }
 
 /* -----------------PC共通部分----------------- */
@@ -726,7 +721,6 @@ textarea {
         width: 30px;
         height: 24px;
     }
-
     /* .c-titlec .c-menu_title{
 
         padding-top: 80px;
@@ -762,21 +756,14 @@ textarea {
     .c-about-detail__top {
         margin-block-end: 80px;
         flex-direction: row;
-        justify-content: space-around;
+    }
+
+    .c-about-list dl {
+        width: 440px;
+        height: 413px;
         padding-block: 30px;
         border-top: 1px solid var(--gyoza_black);
         border-bottom: 1px solid var(--gyoza_black);
-        gap: 0;
-    }
-
-    .c-about-list:first-of-type dl {
-        border-right: 1px solid var(--gyoza_black);
-        /* padding-inline-end: 30px; */
-    }
-
-    .c-about-list {
-        width: 480px;
-        /* height: 413px; */
     }
 
     .c-about-sp {
@@ -800,16 +787,22 @@ textarea {
         flex-direction: row;
         gap: 84px;
     }
-/* ここからcontact */
-/* contactレイアウト */
-.l-infCard .l-infCard-lab{
-    font-weight: bold;
-    width: 27%;
-}
-input[type="text"],input[type="email"],input[type="tel"],textarea{
-    width: calc(100% - 250px);
-}
-/* contactコンポーネント */
+
+    /* ここからcontact */
+    /* contactレイアウト */
+    .l-infCard .l-infCard-lab {
+        font-weight: bold;
+        width: 27%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 73%;
+    }
+
+    /* contactコンポーネント */
 
     /* ここからfaqページ */
     /* faq レイアウト */
@@ -837,18 +830,20 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
 
 
     /* ここからshopsページ */
-    /* shopsレイアウト */
     .l-muCard-ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
         row-gap: 80px;
         column-gap: 30px;
     }
 
     /* shops コンポーネント */
     .l-muCard-ul .c-mnCard {
+        width: 300px;
+    }
+
+    .l-muCard-ul .c-mnCard img {
         width: 100%;
+        object-fit: cover;
+        height: 225px;
     }
 
     .l-muCard-ul .c-mnCard img {
@@ -890,15 +885,14 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
 
     /* pc版info-------------------------------------------------------------------------------- */
 
-
-    .c-info__list {
-        display: grid;
-        grid-template-columns: 20% 80%;
-    }
+ .c-info__list{
+    display: grid;
+    grid-template-columns: 17.5% 82.5%;
+ }
 
     .c-info__title {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         border-bottom: 2px var(--gyoza_red) solid;
         padding: 30px;
     }
