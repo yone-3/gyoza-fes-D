@@ -273,20 +273,21 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 40px;
 
 }
-
-
 
 .c-about-list dl {
     text-align: center;
 }
 
+
+
 .c-about-list dd {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: clamp(17px, 14.183px + 0.751vw, 25px);
 }
 
 .c-about-detail__title {
@@ -466,8 +467,7 @@ textarea {
 /* ここからshopsページ */
 /* shops レイアウト */
 .l-muCard-ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     row-gap: 60px;
 
 }
@@ -491,7 +491,7 @@ textarea {
     margin: 15px 0px;
     display: flex;
     flex-wrap: wrap;
-    height: 116px;
+    min-height: 116px;
 }
 
 .l-muCard-ul .l-mnCard-des dt {
@@ -504,13 +504,13 @@ textarea {
 
 /* shops コンポーネント */
 .l-muCard-ul .c-mnCard {
-    width: 346px;
+    width: 100%;
 }
 
 .l-muCard-ul .c-mnCard img {
     width: 100%;
     object-fit: cover;
-    height: 259px;
+    height: 69vw;
 }
 
 .c-mnCard-bs::before {
@@ -528,7 +528,7 @@ textarea {
 }
 
 .c-mnCard-des dd {
-    width: 83%;
+    width: calc(100% - 50px);
 }
 
 .c-menu__small {
@@ -731,8 +731,8 @@ textarea {
         height: 24px;
     }
 
-    /* .c-titlec {
 
+    /* .c-title {
         padding-top: 80px;
     } */
 
@@ -766,14 +766,21 @@ textarea {
     .c-about-detail__top {
         margin-block-end: 80px;
         flex-direction: row;
-    }
-
-    .c-about-list dl {
-        width: 440px;
-        height: 413px;
+        justify-content: space-around;
         padding-block: 30px;
         border-top: 1px solid var(--gyoza_black);
         border-bottom: 1px solid var(--gyoza_black);
+        gap: 0;
+    }
+
+    .c-about-list:first-of-type dl {
+        border-right: 1px solid var(--gyoza_black);
+        /* padding-inline-end: 30px; */
+    }
+
+    .c-about-list {
+        width: 480px;
+        /* height: 413px; */
     }
 
     .c-about-sp {
@@ -840,20 +847,18 @@ textarea {
 
 
     /* ここからshopsページ */
+    /* shopsレイアウト */
     .l-muCard-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         row-gap: 80px;
         column-gap: 30px;
     }
 
     /* shops コンポーネント */
     .l-muCard-ul .c-mnCard {
-        width: 300px;
-    }
-
-    .l-muCard-ul .c-mnCard img {
         width: 100%;
-        object-fit: cover;
-        height: 225px;
     }
 
     .l-muCard-ul .c-mnCard img {
