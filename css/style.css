@@ -586,6 +586,7 @@ textarea {
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .c-menu_location {
+    font-size: 18px;
     font-weight: bold;
     display: flex;
     text-align: left;
@@ -595,10 +596,13 @@ textarea {
 
 .c-menu_location img {
     width: 19px;
-    height: 26px;
+    align-items: center;
 }
 
-
+.c-title.c-menu_title {
+    font-size: 28px;
+    padding-top: 30px;
+}
 
 .c-menu_desc {
     font-size: 20px;
@@ -658,15 +662,17 @@ textarea {
     list-style-type: decimal;
     padding-left: 2em;
 }
-.l-pravacy ol ol{
-    list-style-type:lower-alpha;
+
+.l-pravacy ol ol {
+    list-style-type: lower-alpha;
 }
 
 .l-pravacy ul {
-    list-style-type:lower-alpha;
+    list-style-type: lower-alpha;
     padding-left: 1em
 }
-.l-pravacy ul ul{
+
+.l-pravacy ul ul {
     list-style-type: lower-roman;
 }
 
@@ -724,7 +730,8 @@ textarea {
         width: 30px;
         height: 24px;
     }
-    /* .c-titlec .c-menu_title{
+
+    /* .c-titlec {
 
         padding-top: 80px;
     } */
@@ -865,11 +872,13 @@ textarea {
     .c-menu_location {
         height: 60px;
         font-size: 32px;
-        font-weight: bold;
         align-items: center;
     }
 
-
+    .c-title.c-menu_title {
+        font-size: 36px;
+        padding-top: 0;
+    }
 
     .c-menu_desc {
         margin-top: 80px;
