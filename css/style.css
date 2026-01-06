@@ -79,11 +79,11 @@ section {
     /* font-size: 32px; */
     font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
-    padding-block: 30px;
     border-block-end: 3px solid var(--gyoza_red);
-    /* margin-block-end: 60px; */
-    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
     text-align: center;
+    padding-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+    padding-block-end: 30px;
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 
@@ -187,6 +187,7 @@ section {
     justify-content: center;
     gap: 20px;
     line-height: 1;
+    margin-block-end: 10px;
 }
 
 .l-footer li+li {
@@ -208,18 +209,19 @@ section {
 
 .l-about-inner {
     background: var(--white);
-    padding-block: 60px;
+    padding-block-end: 60px;
     margin-block-end: 80px;
 }
 
 .l-news-sec {
     background: var(--white);
     padding-block-end: 60px;
-    padding-block-start: 60px
+    /* padding-block-start: 60px */
 }
 
 .l-sns-sec {
     background: var(--white);
+    padding-block: 30px;
 }
 
 .c-mv-sec {
@@ -267,12 +269,14 @@ section {
     color: var(--gyoza_red);
 }
 
-.c-about-detail {
+.c-about-detail__top {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
+
+
 
 .c-about-list dl {
     text-align: center;
@@ -559,11 +563,11 @@ textarea {
     padding-top: 30px;
 }
 
-.info dt{
+.info dt {
     padding-bottom: 20px;
 }
 
-.host{
+.host {
     padding-bottom: 40px;
 }
 
@@ -597,11 +601,7 @@ textarea {
     height: 26px;
 }
 
-.c-title {
-    height: 80px;
-    font-size: 28px;
-    padding-bottom: 30px;
-}
+
 
 .c-menu_desc {
     font-size: 20px;
@@ -628,7 +628,8 @@ textarea {
 .c-menu_shop {
     margin: 60px 0;
 }
-.c-menu_shop_desc{
+
+.c-menu_shop_desc {
     font-size: 16px;
 }
 
@@ -648,13 +649,24 @@ textarea {
     height: 10px;
     background: var(--gyoza_red);
 }
-.l-pravacy{
+
+.l-pravacy {
+    font-size: 14px;
     padding: 0;
     margin-bottom: 20px;
 }
-.l-pravacy ol{
-    list-style-type:decimal;
+
+
+.l-pravacy ol {
+    list-style-type: decimal;
+    padding-left: 2em;
 }
+
+.l-pravacy li {
+    /* text-indent: -1em; */
+    padding-left: 1em
+}
+
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
 @media(min-width:768px) {
@@ -709,11 +721,10 @@ textarea {
         width: 30px;
         height: 24px;
     }
+    /* .c-titlec .c-menu_title{
 
-    .c-title,
-    h1:has(.c-title) {
-        margin-top: 80px;
-    }
+        padding-top: 80px;
+    } */
 
 
     /* -----------------以下、各ページ設定----------------- */
@@ -742,14 +753,14 @@ textarea {
         padding-inline: 90px;
     }
 
-    .c-about-detail {
+    .c-about-detail__top {
         margin-block-end: 80px;
         flex-direction: row;
     }
 
     .c-about-list dl {
         width: 440px;
-        height: 353px;
+        height: 413px;
         padding-block: 30px;
         border-top: 1px solid var(--gyoza_black);
         border-bottom: 1px solid var(--gyoza_black);
@@ -855,12 +866,7 @@ textarea {
         align-items: center;
     }
 
-    .c-title {
-        height: 90px;
-        font-size: 36px;
-        padding-top: 0;
-        margin: 0;
-    }
+
 
     .c-menu_desc {
         margin-top: 80px;
@@ -877,65 +883,35 @@ textarea {
     }
 
 
-/* pc版info-------------------------------------------------------------------------------- */
-
+    /* pc版info-------------------------------------------------------------------------------- */
 
 .c-info__list{
     display: grid;
     grid-template-columns: 17.5% 82.5%;
 }
 
-.c-info__title{
-    display: flex;
-    align-items: center;
-    border-bottom: 2px var(--gyoza_red) solid;
-    padding: 30px;
+
+    .c-info__title {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px var(--gyoza_red) solid;
+        padding: 30px;
+    }
+
+    .c-info__text {
+        padding: 30px;
+    }
+
+
+    .info {
+        padding-top: 40px;
+    }
+
+    .map {
+        height: 321px;
+        padding-top: 40px;
+    }
+
+
+
 }
-
-.c-info__text{
-    padding: 30px;
-}
-
-
-.info {
-    padding-top: 40px;
-}
-
-.map {
-    height: 321px;
-    padding-top: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-}
-
-
-
