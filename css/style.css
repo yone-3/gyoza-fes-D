@@ -81,6 +81,9 @@ section {
     font-weight: bold;
     border-block-end: 3px solid var(--gyoza_red);
     text-align: center;
+    padding-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+    padding-block-end: 30px;
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 
@@ -184,6 +187,7 @@ section {
     justify-content: center;
     gap: 20px;
     line-height: 1;
+    margin-block-end: 10px;
 }
 
 .l-footer li+li {
@@ -205,18 +209,19 @@ section {
 
 .l-about-inner {
     background: var(--white);
-    padding-block: 60px;
+    padding-block-end: 60px;
     margin-block-end: 80px;
 }
 
 .l-news-sec {
     background: var(--white);
     padding-block-end: 60px;
-    padding-block-start: 60px
+    /* padding-block-start: 60px */
 }
 
 .l-sns-sec {
     background: var(--white);
+    padding-block: 30px;
 }
 
 .c-mv-sec {
@@ -264,7 +269,7 @@ section {
     color: var(--gyoza_red);
 }
 
-.c-about-detail {
+.c-about-detail__top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -711,8 +716,8 @@ textarea {
         width: 30px;
         height: 24px;
     }
+    /* .c-titlec .c-menu_title{
 
-    /* .c-title .c-menu_title {
         padding-top: 80px;
     } */
 
@@ -743,14 +748,14 @@ textarea {
         padding-inline: 90px;
     }
 
-    .c-about-detail {
+    .c-about-detail__top {
         margin-block-end: 80px;
         flex-direction: row;
     }
 
     .c-about-list dl {
         width: 440px;
-        height: 353px;
+        height: 413px;
         padding-block: 30px;
         border-top: 1px solid var(--gyoza_black);
         border-bottom: 1px solid var(--gyoza_black);
@@ -873,46 +878,34 @@ textarea {
     }
 
 
-    /* pc版info-------------------------------------------------------------------------------- */
-    .info {
-        padding-top: 40px;
-    }
-
-    .map {
-        height: 321px;
-        padding-top: 40px;
-    }
+/* pc版info-------------------------------------------------------------------------------- */
 
 
+.c-info__list{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.c-info__title{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px var(--gyoza_red) solid;
+    padding: 30px;
+}
+
+.c-info__text{
+    padding: 30px;
+}
 
 
+.info {
+    padding-top: 40px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.map {
+    height: 321px;
+    padding-top: 40px;
+}
 
 
 
