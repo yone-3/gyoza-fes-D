@@ -641,15 +641,18 @@ textarea {
 }
 
 .l-pravacy {
+    font-size: 14px;
     padding: 0;
     margin-bottom: 20px;
 }
 
-.l-pravacy ol{
-    list-style-type:decimal;
-    padding-left: 1em;
+
+.l-pravacy ol {
+    list-style-type: decimal;
+    padding-left: 2em;
 }
-.l-pravacy li{
+
+.l-pravacy li {
     /* text-indent: -1em; */
     padding-left: 1em
 }
