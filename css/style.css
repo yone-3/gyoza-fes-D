@@ -464,8 +464,7 @@ textarea {
 /* ここからshopsページ */
 /* shops レイアウト */
 .l-muCard-ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     row-gap: 60px;
 
 }
@@ -489,7 +488,7 @@ textarea {
     margin: 15px 0px;
     display: flex;
     flex-wrap: wrap;
-    height: 116px;
+    min-height: 116px;
 }
 
 .l-muCard-ul .l-mnCard-des dt {
@@ -502,13 +501,13 @@ textarea {
 
 /* shops コンポーネント */
 .l-muCard-ul .c-mnCard {
-    width: 346px;
+    width: 100%;
 }
 
 .l-muCard-ul .c-mnCard img {
     width: 100%;
     object-fit: cover;
-    height: 259px;
+    height: 69vw;
 }
 
 .c-mnCard-bs::before {
@@ -526,7 +525,7 @@ textarea {
 }
 
 .c-mnCard-des dd {
-    width: 83%;
+    width: calc(100% - 50px);
 }
 
 .c-menu__small {
@@ -817,20 +816,18 @@ textarea {
 
 
     /* ここからshopsページ */
+    /* shopsレイアウト */
     .l-muCard-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         row-gap: 80px;
         column-gap: 30px;
     }
 
     /* shops コンポーネント */
     .l-muCard-ul .c-mnCard {
-        width: 300px;
-    }
-
-    .l-muCard-ul .c-mnCard img {
         width: 100%;
-        object-fit: cover;
-        height: 225px;
     }
 
     .l-muCard-ul .c-mnCard img {
