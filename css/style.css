@@ -865,10 +865,35 @@ textarea {
     }
 
 
-    /* pc版info-------------------------------------------------------------------------------- */
-    .info {
-        padding-top: 40px;
-    }
+/* pc版info-------------------------------------------------------------------------------- */
+
+
+.c-info__list{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.c-info__title{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px var(--gyoza_red) solid;
+    padding: 30px;
+}
+
+.c-info__text{
+    padding: 30px;
+}
+
+
+.info {
+    padding-top: 40px;
+}
+
+.map {
+    height: 321px;
+    padding-top: 40px;
+}
+
 
     .map {
         height: 321px;
