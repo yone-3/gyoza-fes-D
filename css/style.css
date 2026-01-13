@@ -99,6 +99,7 @@ section {
     font-weight: bold;
     color: var(--white);
     max-width: 300px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -210,11 +211,13 @@ section {
 .l-news-sec {
     background: var(--white);
     padding-block-end: 60px;
+    margin-block: 30px;
 }
 
 .l-sns-sec {
     background: var(--white);
     padding-block: 30px;
+    margin-block-end: 60px;
 }
 
 .c-mv-sec {
@@ -788,6 +791,10 @@ ol.c-pravacy-text-list-abc {
         margin-block: 40px;
     }
 
+    .l-sns-sec {
+        margin-block-end: 120px;
+    }
+
     .c-news-detail {
         flex-direction: row;
     }
@@ -796,9 +803,7 @@ ol.c-pravacy-text-list-abc {
         padding-inline-start: 16px;
     }
 
-    .l-sns-sec {
-        margin-block-end: 120px;
-    }
+
 
     .c-sns-icon {
         display: flex;
