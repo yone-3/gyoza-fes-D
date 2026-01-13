@@ -29,7 +29,6 @@ img {
 .l-wrapper {
     width: min(92%, 960px);
     margin: 0 auto;
-
 }
 
 /* -----------------モバイルファースト -----------------*/
@@ -70,13 +69,11 @@ img {
 }
 
 section {
-    /* padding-block: 30px; */
     padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 
 .c-title {
-    /* font-size: 32px; */
     font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
     border-block-end: 3px solid var(--gyoza_red);
@@ -88,13 +85,11 @@ section {
 
 
 .c-title__sub {
-    /* font-size: 24px; */
     font-size: clamp(24px, 21.183px + 0.751vw, 32px);
     font-weight: bold;
     color: var(--white);
     background: var(--gyoza_red);
     padding: 5px 10px;
-    /* margin-block-end: 30px; */
     margin-block-end: clamp(30px, 12.394px + 4.695vw, 80px);
 }
 
@@ -124,7 +119,6 @@ section {
     background: var(--gyoza_black);
     padding: 15px 85px;
     border-radius: 15px;
-    /* width: 122px; */
 }
 
 
@@ -138,6 +132,7 @@ section {
 
 .c-btn__sns {
     width: 150px;
+    height: 35px;
     background: var(--gyoza_black);
     color: var(--white);
     border-radius: 7px;
@@ -161,16 +156,11 @@ section {
     width: 60px;
     height: 60px;
     font-size: 16px;
-    /* padding-top: 6px; */
     font-weight: bold;
     color: var(--white);
     background: var(--gyoza_red);
-    /* border: none; */
     border-radius: 50%;
     cursor: pointer;
-    /* opacity: 0; */
-    /* visibility: hidden; */
-    /* transition: .2s; */
     letter-spacing: 1px;
 }
 
@@ -220,7 +210,6 @@ section {
 .l-news-sec {
     background: var(--white);
     padding-block-end: 60px;
-    /* padding-block-start: 60px */
 }
 
 .l-sns-sec {
@@ -233,7 +222,6 @@ section {
     background-size: cover;
     object-fit: cover;
     padding-block-start: 68px;
-    /* padding-block-end: 200px; */
     height: clamp(580px, 474.366px + 28.169vw, 880px);
 }
 
@@ -255,13 +243,15 @@ section {
     text-align: center;
 }
 
+.c-top-title {
+    padding-block-start: 30px;
+}
+
 .c-about-concept {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
-
-
 }
 
 .c-about-concept__big {
@@ -277,10 +267,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
-
-
 
 .c-about-list dl {
     text-align: center;
@@ -322,7 +309,6 @@ section {
     display: none;
 }
 
-
 .c-news-detail {
     display: flex;
     flex-direction: column;
@@ -332,7 +318,6 @@ section {
 }
 
 .c-news-date {
-    /* padding-inline-start: 16px; */
     font-weight: normal;
     width: 162px;
 }
@@ -364,6 +349,10 @@ section {
     color: var(--white);
 }
 
+.c-icon_x img {
+    width: 25px;
+    height: 25px;
+}
 /* ここからnews-detailページ */
 /* news-detailレイアウト */
 .c-newsDet-date{
@@ -390,12 +379,10 @@ section {
     font-weight: bold;
     width: 100%;
     padding: 10px;
-
 }
 
 .l-inf-form>.l-infCard:nth-of-type(4) {
     align-items: flex-start;
-
 }
 
 .l-infCard-lab-q {
@@ -444,9 +431,7 @@ textarea {
     border: 1px solid var(--gyoza_black);
     background-color: var(--white);
     width: 100%;
-
 }
-
 
 
 /* ここからfaqページ */
@@ -454,7 +439,6 @@ textarea {
 .l-faqCard {
     margin-top: 40px;
 }
-
 
 /* faqコンポーネント */
 .c-faqCard-q {
@@ -477,14 +461,12 @@ textarea {
 }
 
 
-
 /* ここからshopsページ */
 /* shops レイアウト */
 .l-muCard-ul {
     display: flex;
     flex-wrap: wrap;
     row-gap: 60px;
-
 }
 
 .l-mnCard>* {
@@ -534,12 +516,10 @@ textarea {
     width: 19px;
     height: 26px;
     background: url(../img/point.svg) no-repeat center center/100%;
-
 }
 
 .c-mnCard-des dt {
     display: inline-block;
-
 }
 
 .c-mnCard-des dd {
@@ -549,7 +529,6 @@ textarea {
 .c-menu__small {
     font-size: 14px;
 }
-
 
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -601,8 +580,6 @@ textarea {
     object-fit: cover;
 }
 
-
-
 .c-menu_location {
     font-weight: bold;
     display: flex;
@@ -615,8 +592,6 @@ textarea {
     width: 19px;
     height: 26px;
 }
-
-
 
 .c-menu_desc {
     font-size: 20px;
@@ -671,7 +646,6 @@ textarea {
     margin-bottom: 20px;
 }
 
-
 .l-pravacy ol {
     list-style-type: decimal;
     padding-left: 2em;
@@ -691,16 +665,11 @@ textarea {
 
     .l-header {
         padding: 50px;
-        /* margin-block-end: 80px; */
     }
 
     .l-header-top {
         margin-block-end: 0;
     }
-
-    /* h1 img {
-        width: 350px;
-    } */
 
     .l-header-sp {
         display: none;
@@ -709,7 +678,6 @@ textarea {
     .l-header-pc {
         display: flex;
         justify-content: space-between;
-        /* margin-block-end: 80px; */
     }
 
     .c-header-nav ul {
@@ -738,10 +706,6 @@ textarea {
         width: 30px;
         height: 24px;
     }
-    /* .c-titlec .c-menu_title{
-
-        padding-top: 80px;
-    } */
 
 
     /* -----------------以下、各ページ設定----------------- */
@@ -756,15 +720,9 @@ textarea {
         margin-block-end: 0;
     }
 
-
-
-    /* .c-mv-sec__img {
-        padding: 0 auto;
-    } */
-
-    /* .c-mv-sec__img img {
-        padding-block-start: 117px;
-    } */
+    .c-top-title {
+        padding-block-start: 40px;
+    }
 
     .c-about-concept {
         padding-inline: 90px;
@@ -906,10 +864,10 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
 
     /* pc版info-------------------------------------------------------------------------------- */
 
- .c-info__list{
-    display: grid;
-    grid-template-columns: 17.5% 82.5%;
- }
+    .c-info__list {
+        display: grid;
+        grid-template-columns: 17.5% 82.5%;
+    }
 
     .c-info__title {
         display: flex;
