@@ -385,7 +385,7 @@ section {
 }
 
 .c-newsDet-con {
-    margin-bottom: 60px;
+    margin-bottom: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 /* news-detailコンポーネント */
@@ -472,13 +472,13 @@ textarea {
 /* faqコンポーネント */
 .c-faqCard-q {
     font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(20px, 18.592px + 0.376vw, 24px);
     color: var(--gyoza_red);
     margin-right: 20px;
 }
 
 .c-faqCard dt {
-    font-size: 20px;
+    font-size: clamp(20px, 18.592px + 0.376vw, 24px);
     font-weight: bold;
     margin-bottom: 20px;
     display: flex;
@@ -500,7 +500,7 @@ textarea {
     /* display: flex;
     flex-wrap: wrap; */
     display: grid;
-    row-gap: 60px;
+    row-gap: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 .l-mnCard>* {
@@ -566,7 +566,7 @@ textarea {
 }
 
 .l-menu_wrapper>h1 {
-    padding-top: 30px;
+    padding-top: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -577,7 +577,7 @@ textarea {
 
 .c-info__text {
     border-bottom: 2px var(--gyoza_red) solid;
-    padding: 10px;
+    padding: clamp(10px, 2.958px + 1.878vw, 30px);
 }
 
 .c-info__text-bold {
@@ -610,7 +610,7 @@ textarea {
 
 /* shops_info コンポーネント */
 .c-menu_img {
-    height: 259px;
+    height: clamp(259px, 96.676px + 43.286vw, 720px);
     object-fit: cover;
 }
 
@@ -841,9 +841,6 @@ ol.c-pravacy-text-list-abc {
 
     /* ここからnews-detailページ */
     /* news-detailレイアウト */
-    .c-newsDet-con {
-        margin-bottom: 80px;
-    }
 
     /* news-detailコンポーネント */
 
@@ -871,83 +868,35 @@ ol.c-pravacy-text-list-abc {
 
 
     /* faqコンポーネント */
-    .c-faqCard-q {
-        margin-right: 20px;
-        font-size: 24px;
-    }
-
-    .c-faqCard dt {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .c-faqCard dd {
-        margin-bottom: 30px;
-        margin-left: 35px;
-    }
-
-
 
 
     /* ここからshopsページ */
     .l-muCard-ul {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 80px;
         column-gap: 30px;
     }
 
     /* shops コンポーネント */
-    .l-muCard-ul .c-mnCard {
-        width: 100%;
-    }
 
     .l-muCard-ul .c-mnCard img {
-        width: 100%;
-        object-fit: cover;
-        height: 21vw;
-    }
-
-    .l-muCard-ul .c-mnCard img {
-        width: 100%;
-        object-fit: cover;
         height: 225px;
     }
 
-    .l-menu_wrapper>h1 {
-        padding-top: 40px;
-    }
 
     /* ここからshops_info */
     .c-menu_img {
-        height: 720px;
         width: 100%;
-        object-fit: cover;
     }
 
     .c-menu_location {
         height: 60px;
         font-size: 32px;
-        font-weight: bold;
         align-items: center;
     }
-
-
 
     .c-menu_desc {
         margin-top: 80px;
     }
-
-    .c-menu_info dt {
-        font-size: 20px;
-        width: 60px;
-    }
-
-    .c-menu_info dd {
-        font-size: 20px;
-        width: calc(100% - 60px);
-    }
-
 
     /* pc版info-------------------------------------------------------------------------------- */
 
@@ -963,12 +912,7 @@ ol.c-pravacy-text-list-abc {
         padding: 30px;
     }
 
-    .c-info__text {
-        padding: 30px;
-    }
-
-
-    .c-info__host {
+    .info {
         padding-top: 40px;
     }
 
