@@ -174,7 +174,7 @@ section {
     padding: 20px 0;
     text-align: center;
     background: var(--white);
-    margin-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+    margin-block-start: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 .l-footer ul {
@@ -192,6 +192,19 @@ section {
 
 .l-footer li a:hover {
     text-decoration: underline solid 1px var(--gyoza_black);
+}
+
+.c-footer__mbs60 {
+    margin-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
+.c-bb {
+    border-bottom: solid 1px var(--gyoza_black);
+}
+
+.c-bb:hover {
+    color: var(--gyoza_red);
+    border-color: var(--gyoza_red);
 }
 
 /* -----------------以下各ページごとのコーディング----------------- */
