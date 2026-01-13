@@ -396,7 +396,7 @@ section {
 .l-infCard {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 54px;
+    margin-bottom: 30px;
 }
 
 .l-infCard-lab {
@@ -467,6 +467,9 @@ textarea {
 /* faq レイアウト */
 .l-faqCard {
     margin-top: 40px;
+}
+.l-faqCard :nth-last-of-type(1) {
+    margin-bottom: 0;
 }
 
 /* faqコンポーネント */
@@ -847,6 +850,9 @@ ol.c-pravacy-text-list-abc {
 
     /* ここからcontact */
     /* contactレイアウト */
+    .l-infCard{
+    margin-bottom: 60px;
+}
     .l-infCard .l-infCard-lab {
         font-weight: bold;
         width: 250px;
