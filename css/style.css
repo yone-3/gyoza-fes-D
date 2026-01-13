@@ -393,54 +393,51 @@ section {
 
 /* ここからcontactページ */
 /*contactレイアウト  */
-.l-infCard {
+.l-infCard{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 54px;
 }
-
-.l-infCard-lab {
+.l-infCard-lab{
     display: flex;
     align-items: center;
     font-weight: bold;
     width: 100%;
     padding: 10px;
+
 }
 
-.l-inf-form>.l-infCard:nth-of-type(4) {
+.l-inf-form>.l-infCard:nth-of-type(4){
+    align-items: flex-start;
+
+}
+
+.l-infCard-lab-q{
     align-items: flex-start;
 }
-
-.l-infCard-lab-q {
-    align-items: flex-start;
-}
-
-.l-infCard-req {
+.l-infCard-req{
     display: inline-block;
     align-items: center;
     color: var(--white);
     font-size: 14px;
-    background: var(--gyoza_red);
-    padding: 0px 10px;
-    border-radius: 14px;
+   background: var(--gyoza_red);
+    padding: 0px 10px ;
+    border-radius: 14px; 
     margin-left: 20px;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+input[type="text"],input[type="email"],input[type="tel"]{
     height: 50px;
 }
-
-textarea {
+textarea{
     height: 170px;
 }
 
-.c-contact__btn {
+.c-contact__btn{
+    /* display: block; */
     text-align: center;
 }
 
-.l-infCard-btn {
+.l-infCard-btn{
     color: var(--white);
     text-align: center;
     font-size: 20px;
@@ -450,15 +447,12 @@ textarea {
 }
 
 /* contactコンポーネント */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+input[type="text"],input[type="email"],input[type="tel"],textarea{
     border: 1px solid var(--gyoza_black);
     background-color: var(--white);
     width: 100%;
+   
 }
-
 
 /* ここからfaqページ */
 /* faq レイアウト */
@@ -490,8 +484,9 @@ textarea {
 /* ここからshopsページ */
 /* shops レイアウト */
 .l-muCard-ul {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
     row-gap: 60px;
 }
 
@@ -514,7 +509,7 @@ textarea {
     margin: 15px 0px;
     display: flex;
     flex-wrap: wrap;
-    height: 116px;
+    min-height: 116px;
 }
 
 .l-muCard-ul .l-mnCard-des dt {
@@ -527,13 +522,13 @@ textarea {
 
 /* shops コンポーネント */
 .l-muCard-ul .c-mnCard {
-    width: 346px;
+    width: 100%;
 }
 
 .l-muCard-ul .c-mnCard img {
     width: 100%;
     object-fit: cover;
-    height: 259px;
+    height: 69vw;
 }
 
 .c-mnCard-bs::before {
@@ -546,10 +541,11 @@ textarea {
 
 .c-mnCard-des dt {
     display: inline-block;
+    width: 50px;
 }
 
 .c-mnCard-des dd {
-    width: 83%;
+    width: calc(100% - 50px);
 }
 
 .c-menu__small {
@@ -840,7 +836,7 @@ ol.c-pravacy-text-list-abc {
     /* contactレイアウト */
     .l-infCard .l-infCard-lab {
         font-weight: bold;
-        width: 27%;
+        width: 250px;
     }
 
     input[type="text"],
@@ -879,19 +875,21 @@ ol.c-pravacy-text-list-abc {
 
     /* ここからshopsページ */
     .l-muCard-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         row-gap: 80px;
         column-gap: 30px;
     }
 
     /* shops コンポーネント */
     .l-muCard-ul .c-mnCard {
-        width: 300px;
+        width: 100%;
     }
 
     .l-muCard-ul .c-mnCard img {
         width: 100%;
         object-fit: cover;
-        height: 225px;
+        height: 21vw;
     }
 
     .l-muCard-ul .c-mnCard img {
