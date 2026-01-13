@@ -588,7 +588,7 @@ textarea {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 30px;
+    padding-top: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 .c-info__host dt {
@@ -916,11 +916,10 @@ ol.c-pravacy-text-list-abc {
         padding-top: 40px;
     }
 
-    .map {
+    .c-info__map {
         height: 321px;
         padding-top: 40px;
     }
-
 
 
 }
