@@ -202,6 +202,10 @@ section {
 /* -----------------以下各ページごとのコーディング----------------- */
 
 /* ここからTOP / NEWSページ */
+.c-sp-inner {
+    background: var(--white);
+}
+
 .l-about-sec {
     background: var(--gyoza_yellow);
     padding-block: clamp(60px, 52.958px + 1.878vw, 80px);
@@ -322,7 +326,7 @@ section {
 .c-news-detail {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px dotted var(--gyoza_red);
+    border-bottom: 1px dashed var(--gyoza_red);
     padding: 20px 15px;
     background: var(--white);
 }
@@ -670,7 +674,9 @@ textarea {
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
 @media(min-width:768px) {
-
+    .c-sp-inner {
+        background: transparent;
+    }
 
     .l-header {
         padding: 50px;
