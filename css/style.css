@@ -360,6 +360,18 @@ section {
     color: var(--white);
 }
 
+/* ここからnews-detailページ */
+/* news-detailレイアウト */
+.c-newsDet-date{
+    margin-bottom: 10px;
+}
+.c-newsDet-con{
+    margin-bottom: 60px;
+}
+
+/* news-detailコンポーネント */
+
+
 /* ここからcontactページ */
 /*contactレイアウト  */
 .l-infCard {
@@ -410,7 +422,6 @@ textarea {
 }
 
 .c-contact__btn {
-    /* display: block; */
     text-align: center;
 }
 
@@ -791,6 +802,16 @@ textarea {
         flex-direction: row;
         gap: 84px;
     }
+
+    /* ここからnews-detailページ */
+/* news-detailレイアウト */
+.c-newsDet-con{
+    margin-bottom: 80px;
+}
+
+/* news-detailコンポーネント */
+
+
 /* ここからcontact */
 /* contactレイアウト */
 .l-infCard .l-infCard-lab{
