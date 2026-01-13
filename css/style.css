@@ -551,30 +551,26 @@ textarea {
     padding: 10px;
 }
 
-.bill {
+.c-info__text-bold {
     font-weight: bold;
 }
 
-.park {
-    font-weight: bold;
-}
-
-.info {
+.c-info__host {
     display: flex;
     justify-content: center;
     text-align: center;
     padding-top: 30px;
 }
 
-.info dt {
+.c-info__host dt {
     padding-bottom: 20px;
 }
 
-.host {
+.c-info__host-text {
     padding-bottom: 40px;
 }
 
-.map {
+.c-info__map {
     width: 100%;
     height: 270px;
     padding-top: 30px;
