@@ -462,6 +462,9 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
     margin-bottom: 30px;
     margin-left: 35px;
 }
+.l-faq-dd-last{
+    margin-bottom: 0;
+}
 
 
 /* ここからshopsページ */
@@ -605,7 +608,8 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
 
 .c-menu_info {
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -613,11 +617,13 @@ input[type="text"],input[type="email"],input[type="tel"],textarea{
     font-size: 20px;
     display: inline-block;
     font-weight: normal;
+    width: 60px;
 }
 
 .c-menu_info dd {
+    display: inline-block;
     font-size: 20px;
-    flex-basis: 80%;
+    width: calc(100% - 60px);
 }
 
 .c-menu_shop {
@@ -904,12 +910,12 @@ ol.c-pravacy-text-list-abc {
 
     .c-menu_info dt {
         font-size: 20px;
-        display: inline-block;
+        width: 60px;
     }
 
     .c-menu_info dd {
         font-size: 20px;
-        flex-basis: 92%;
+        width: calc(100% - 60px);
     }
 
 
