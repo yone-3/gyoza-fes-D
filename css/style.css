@@ -267,17 +267,19 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 60px;
 }
 
 .c-about-list dl {
     text-align: center;
+
 }
 
 .c-about-list dd {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 17px;
 }
 
 .c-about-detail__title {
@@ -353,12 +355,14 @@ section {
     width: 25px;
     height: 25px;
 }
+
 /* ここからnews-detailページ */
 /* news-detailレイアウト */
-.c-newsDet-date{
+.c-newsDet-date {
     margin-bottom: 10px;
 }
-.c-newsDet-con{
+
+.c-newsDet-con {
     margin-bottom: 60px;
 }
 
@@ -731,14 +735,25 @@ textarea {
     .c-about-detail__top {
         margin-block-end: 80px;
         flex-direction: row;
+        padding-block: 30px;
+        border-top: 1px solid var(--gyoza_black);
+        border-bottom: 1px solid var(--gyoza_black);
+        gap: 0;
     }
 
     .c-about-list dl {
         width: 440px;
-        height: 413px;
-        padding-block: 30px;
-        border-top: 1px solid var(--gyoza_black);
-        border-bottom: 1px solid var(--gyoza_black);
+        height: 350px;
+        border-right: 1px solid var(--gyoza_black);
+    }
+
+    .c-about-list:nth-of-type(2) dl {
+        border-right: none;
+    }
+
+    .c-about-detail__main {
+        height: 250px;
+        justify-content: space-between;
     }
 
     .c-about-sp {
@@ -764,24 +779,29 @@ textarea {
     }
 
     /* ここからnews-detailページ */
-/* news-detailレイアウト */
-.c-newsDet-con{
-    margin-bottom: 80px;
-}
+    /* news-detailレイアウト */
+    .c-newsDet-con {
+        margin-bottom: 80px;
+    }
 
-/* news-detailコンポーネント */
+    /* news-detailコンポーネント */
 
 
-/* ここからcontact */
-/* contactレイアウト */
-.l-infCard .l-infCard-lab{
-    font-weight: bold;
-    width: 27%;
-}
-input[type="text"],input[type="email"],input[type="tel"],textarea{
-    width: calc(100% - 250px);
-}
-/* contactコンポーネント */
+    /* ここからcontact */
+    /* contactレイアウト */
+    .l-infCard .l-infCard-lab {
+        font-weight: bold;
+        width: 27%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: calc(100% - 250px);
+    }
+
+    /* contactコンポーネント */
 
     /* ここからfaqページ */
     /* faq レイアウト */
