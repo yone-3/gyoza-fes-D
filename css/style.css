@@ -636,13 +636,13 @@ textarea {
 }
 
 /* praivacy コンポーネント */
-.c-pravacy-title::before {
+/* .c-pravacy-title::before {
     content: "";
     display: inline-block;
     width: 10px;
     height: 10px;
     background: var(--gyoza_red);
-}
+} */
 
 .l-pravacy {
     font-size: 14px;
@@ -659,6 +659,16 @@ textarea {
     /* text-indent: -1em; */
     padding-left: 1em
 }
+
+ul.c-pravacy-text-list-abc,
+ol.c-pravacy-text-list-abc {
+    list-style-type: lower-latin;
+}
+
+.c-pravacy-text-list-123 {
+    list-style-type: lower-roman;
+}
+
 
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
