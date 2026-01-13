@@ -80,7 +80,7 @@ section {
     text-align: center;
     padding-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
     padding-block-end: 30px;
-    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+    margin-block-end: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 
@@ -99,7 +99,7 @@ section {
     font-weight: bold;
     color: var(--white);
     max-width: 300px;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     margin: 0 auto;
 }
@@ -141,6 +141,10 @@ section {
 }
 
 /* SNS */
+.c-btn__sns a {
+    width: 100%;
+}
+
 .c-btn__sns img {
     width: 30px;
     height: 35px;
@@ -539,6 +543,9 @@ textarea {
     font-size: 14px;
 }
 
+.l-menu_wrapper>h1 {
+    padding-top: 30px;
+}
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
@@ -882,6 +889,10 @@ ol.c-pravacy-text-list-abc {
         width: 100%;
         object-fit: cover;
         height: 225px;
+    }
+
+    .l-menu_wrapper>h1 {
+        padding-top: 40px;
     }
 
     /* ここからshops_info */
