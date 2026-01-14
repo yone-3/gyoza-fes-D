@@ -358,6 +358,10 @@ section,
     padding-block-end: clamp(30px, 12.394px + 4.695vw, 80px);
 }
 
+.c-news__other {
+    padding-block-end: 0;
+}
+
 .c-sns-title {
     font-size: clamp(28px, 25.183px + 0.751vw, 36px);
     text-align: center;
