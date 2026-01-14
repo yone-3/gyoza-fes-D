@@ -716,6 +716,10 @@ textarea {
     padding-inline-start: 1em
 }
 
+.c-pravacy-title:first-of-type {
+    padding-block-start: clamp(30px, 26.479px + 0.939vw, 40px);
+}
+
 ul.c-pravacy-text-list-abc,
 ol.c-pravacy-text-list-abc {
     list-style-type: lower-latin;
