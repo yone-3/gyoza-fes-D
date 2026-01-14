@@ -446,10 +446,13 @@ input[type="text"],
 input[type="email"],
 input[type="tel"] {
     height: 50px;
+    padding-inline-start: 10px;
 }
 
 textarea {
     height: 170px;
+    padding-block-start: 10px;
+    padding-inline-start: 10px;
 }
 
 .c-contact__btn {
