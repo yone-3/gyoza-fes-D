@@ -122,7 +122,6 @@ section {
     border-radius: 15px;
 }
 
-
 /* 赤いボタン */
 .c-btn__red a {
     font-size: 16px;
@@ -187,7 +186,7 @@ section {
 
 .l-footer li+li {
     border-left: 1px solid var(--gyoza_black);
-    padding-left: 20px;
+    padding-inline-start: 20px;
 }
 
 .l-footer li a:hover {
@@ -381,11 +380,11 @@ section {
 /* ここからnews-detailページ */
 /* news-detailレイアウト */
 .c-newsDet-date {
-    margin-bottom: 10px;
+    margin-block-end: 10px;
 }
 
 .c-newsDet-con {
-    margin-bottom: clamp(60px, 52.958px + 1.878vw, 80px);
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 /* news-detailコンポーネント */
@@ -396,7 +395,7 @@ section {
 .l-infCard {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-block-end: 30px;
 }
 
 .l-infCard-lab {
@@ -405,12 +404,10 @@ section {
     font-weight: bold;
     width: 100%;
     padding: 10px;
-
 }
 
 .l-inf-form>.l-infCard:nth-of-type(4) {
     align-items: flex-start;
-
 }
 
 .l-infCard-lab-q {
@@ -423,9 +420,9 @@ section {
     color: var(--white);
     font-size: 14px;
     background: var(--gyoza_red);
-    padding: 0px 10px;
+    padding-inline: 10px;
     border-radius: 14px;
-    margin-left: 20px;
+    margin-inline-start: 20px;
 }
 
 input[type="text"],
@@ -465,10 +462,11 @@ textarea {
 /* ここからfaqページ */
 /* faq レイアウト */
 .l-faqCard {
-    margin-top: 40px;
+    margin-block-start: 40px;
 }
+
 .l-faqCard :nth-last-of-type(1) {
-    margin-bottom: 0;
+    margin-block-end: 0;
 }
 
 /* faqコンポーネント */
@@ -476,23 +474,23 @@ textarea {
     font-weight: bold;
     font-size: clamp(20px, 18.592px + 0.376vw, 24px);
     color: var(--gyoza_red);
-    margin-right: 20px;
+    margin-inline-end: 20px;
 }
 
 .c-faqCard dt {
     font-size: clamp(20px, 18.592px + 0.376vw, 24px);
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-block-end: 20px;
     display: flex;
 }
 
 .c-faqCard dd {
-    margin-bottom: 30px;
-    margin-left: 35px;
+    margin-block-end: 30px;
+    margin-inline-start: 35px;
 }
 
 .l-faq-dd-last {
-    margin-bottom: 0;
+    margin-block-end: 0;
 }
 
 
@@ -506,7 +504,7 @@ textarea {
 }
 
 .l-mnCard>* {
-    margin-bottom: 15px;
+    margin-block-end: 15px;
 }
 
 .l-mnCard-bs {
@@ -532,7 +530,7 @@ textarea {
 }
 
 .l-muCard-ul .l-mnbtn__red {
-    margin-bottom: 10px;
+    margin-block-end: 10px;
 }
 
 /* shops コンポーネント */
@@ -568,7 +566,7 @@ textarea {
 }
 
 .l-menu_wrapper>h1 {
-    padding-top: clamp(30px, 26.479px + 0.939vw, 40px);
+    padding-block-start: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -590,21 +588,21 @@ textarea {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: clamp(30px, 26.479px + 0.939vw, 40px);
+    padding-block-start: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 .c-info__host dt {
-    padding-bottom: 20px;
+    padding-block-end: 20px;
 }
 
 .c-info__host-text {
-    padding-bottom: 40px;
+    padding-block-end: 40px;
 }
 
 .c-info__map {
     width: 100%;
     height: 270px;
-    padding-top: 30px;
+    padding-block-start: 30px;
 }
 
 /* info終了ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -622,7 +620,7 @@ textarea {
     display: flex;
     text-align: left;
     gap: 10px;
-    padding: 10px 0;
+    padding-block: 10px;
 }
 
 .c-menu_location img {
@@ -632,7 +630,7 @@ textarea {
 
 .c-menu_desc {
     font-size: 20px;
-    margin-bottom: 45px;
+    margin-block-end: 45px;
 }
 
 .c-menu_info {
@@ -661,7 +659,7 @@ textarea {
 }
 
 .c-menu_shop {
-    margin: 60px 0;
+    margin-block: 60px;
 }
 
 .c-menu_shop_desc {
@@ -688,17 +686,17 @@ textarea {
 .l-pravacy {
     font-size: 14px;
     padding: 0;
-    margin-bottom: 20px;
+    margin-block-end: 20px;
 }
 
 .l-pravacy ol {
     list-style-type: decimal;
-    padding-left: 2em;
+    padding-inline-start: 2em;
 }
 
 .l-pravacy li {
     /* text-indent: -1em; */
-    padding-left: 1em
+    padding-inline-start: 1em
 }
 
 ul.c-pravacy-text-list-abc,
@@ -839,8 +837,6 @@ ol.c-pravacy-text-list-abc {
         padding-inline-start: 16px;
     }
 
-
-
     .c-sns-icon {
         display: flex;
         flex-direction: row;
@@ -855,9 +851,10 @@ ol.c-pravacy-text-list-abc {
 
     /* ここからcontact */
     /* contactレイアウト */
-    .l-infCard{
-    margin-bottom: 60px;
-}
+    .l-infCard {
+        margin-block-end: 60px;
+    }
+
     .l-infCard .l-infCard-lab {
         font-weight: bold;
         width: 250px;
@@ -906,7 +903,7 @@ ol.c-pravacy-text-list-abc {
     }
 
     .c-menu_desc {
-        margin-top: 80px;
+        margin-block-start: 80px;
     }
 
     /* pc版info-------------------------------------------------------------------------------- */
@@ -923,13 +920,9 @@ ol.c-pravacy-text-list-abc {
         padding: 30px;
     }
 
-    .info {
-        padding-top: 40px;
-    }
-
     .c-info__map {
         height: 321px;
-        padding-top: 40px;
+        padding-block-start: 0px;
     }
 
 
