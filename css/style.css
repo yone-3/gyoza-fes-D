@@ -246,7 +246,7 @@ section,
 }
 
 .c-mv-sec {
-    background: url(/img/mainvisual.jpg) center top;
+    background: url(./img/mainvisual.jpg) center top;
     background-size: cover;
     object-fit: cover;
     padding-block-start: 68px;
