@@ -156,14 +156,12 @@ section {
     align-items: center;
     justify-content: center;
     right: 30px;
-    bottom: 30px;
+    bottom: 60px;
     width: 60px;
     height: 60px;
     font-size: 16px;
     font-weight: bold;
     color: var(--white);
-    background: var(--gyoza_red);
-    border-radius: 50%;
     cursor: pointer;
     letter-spacing: 1px;
 }
@@ -171,9 +169,11 @@ section {
 .c-btn-jump a {
     display: inline-block;
     width: 60px;
-    /* height: 60px; */
+    height: 60px;
     text-align: center;
-    vertical-align: baseline;
+    background: var(--gyoza_red);
+    line-height: 60px;
+    border-radius: 50%;
 }
 
 .l-footer {
