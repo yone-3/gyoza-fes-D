@@ -168,6 +168,14 @@ section {
     letter-spacing: 1px;
 }
 
+.c-btn-jump a {
+    display: inline-block;
+    width: 60px;
+    /* height: 60px; */
+    text-align: center;
+    vertical-align: baseline;
+}
+
 .l-footer {
     font-size: 14px;
     padding: 20px 0;
@@ -392,6 +400,10 @@ section {
 
 /* ここからcontactページ */
 /*contactレイアウト  */
+.c-mb__plus {
+    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
 .l-infCard {
     display: flex;
     flex-wrap: wrap;
