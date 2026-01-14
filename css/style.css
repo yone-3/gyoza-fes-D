@@ -468,6 +468,7 @@ textarea {
 .l-faqCard {
     margin-top: 40px;
 }
+
 .l-faqCard :nth-last-of-type(1) {
     margin-bottom: 0;
 }
@@ -850,9 +851,10 @@ ol.c-pravacy-text-list-abc {
 
     /* ここからcontact */
     /* contactレイアウト */
-    .l-infCard{
-    margin-bottom: 60px;
-}
+    .l-infCard {
+        margin-bottom: 60px;
+    }
+
     .l-infCard .l-infCard-lab {
         font-weight: bold;
         width: 250px;
@@ -918,13 +920,9 @@ ol.c-pravacy-text-list-abc {
         padding: 30px;
     }
 
-    .info {
-        padding-top: 40px;
-    }
-
     .c-info__map {
         height: 321px;
-        padding-top: 40px;
+        padding-top: 0px;
     }
 
 
