@@ -37,8 +37,6 @@ img {
 .l-header {
     padding: 20px 15px;
     background: var(--white);
-    /* ↓スマホ版はない */
-    /* margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px); */
 }
 
 .c-header-logo img {
@@ -735,6 +733,7 @@ ol.c-pravacy-text-list-abc {
 }
 
 
+
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
 @media(min-width:768px) {
@@ -763,7 +762,7 @@ ol.c-pravacy-text-list-abc {
 
     .c-header-nav ul {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         flex-wrap: wrap;
         column-gap: 30px;
         align-items: center;
@@ -956,4 +955,15 @@ ol.c-pravacy-text-list-abc {
     }
 
 
+}
+
+@media(max-width: 999px) {
+    .l-header-pc {
+        display: none;
+    }
+
+    .l-header-sp {
+        display: flex;
+        justify-content: space-between;
+    }
 }
