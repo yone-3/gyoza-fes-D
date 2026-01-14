@@ -615,6 +615,7 @@ textarea {
 }
 
 .c-menu_location {
+    font-size: 18px;
     font-weight: bold;
     display: flex;
     text-align: left;
@@ -624,7 +625,7 @@ textarea {
 
 .c-menu_location img {
     width: 19px;
-    height: 26px;
+    align-items: center;
 }
 
 .c-menu_desc {
@@ -652,6 +653,10 @@ textarea {
     width: calc(100% - 60px);
 }
 
+.c-menu_shop_title {
+    font-size: 20px;
+}
+
 .c-menu_shop {
     margin-block: 60px;
 }
@@ -666,6 +671,7 @@ textarea {
     width: 10px;
     height: 10px;
     background: var(--gyoza_red);
+    margin-right: 15px;
 }
 
 /* praivacy コンポーネント */
