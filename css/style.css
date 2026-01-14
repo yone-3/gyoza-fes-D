@@ -878,6 +878,7 @@ ol.c-pravacy-text-list-abc {
     input[type="tel"],
     textarea {
         width: calc(100% - 250px);
+        
     }
 
     /* contactコンポーネント */
