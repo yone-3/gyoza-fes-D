@@ -914,13 +914,9 @@ ol.c-pravacy-text-list-abc {
         padding: 30px;
     }
 
-    .info {
-        padding-block-start: 40px;
-    }
-
     .c-info__map {
         height: 321px;
-        padding-block-start: 40px;
+        padding-block-start: 0px;
     }
 
 
