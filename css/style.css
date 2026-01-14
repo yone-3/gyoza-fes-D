@@ -627,7 +627,7 @@ textarea {
 
 /* shops_info コンポーネント */
 .c-section.c-menu_section {
-    padding-top: 80px;
+    padding-top: 0;
 }
 
 .c-menu_img {
@@ -689,8 +689,9 @@ textarea {
 .c-menu_shop_title::before {
     content: "";
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    border-radius: 25%;
+    width: 17px;
+    height: 17px;
     background: var(--gyoza_red);
     margin-right: 15px;
 }
@@ -917,6 +918,10 @@ ol.c-pravacy-text-list-abc {
 
 
     /* ここからshops_info */
+    .c-section.c-menu_section {
+        padding-top: 80px;
+    }
+
     .c-menu_img {
         width: 100%;
     }
