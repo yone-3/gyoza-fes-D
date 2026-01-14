@@ -655,7 +655,6 @@ textarea {
 
 .c-menu_shop_title {
     font-size: 20px;
-    /* 四角と店名の間の空白を空ける↓ */
 }
 
 .c-menu_shop {
@@ -672,6 +671,7 @@ textarea {
     width: 10px;
     height: 10px;
     background: var(--gyoza_red);
+    margin-right: 15px;
 }
 
 /* praivacy コンポーネント */
