@@ -68,7 +68,8 @@ img {
     text-decoration: underline solid 2px var(--gyoza_red);
 }
 
-section {
+section,
+.c-section {
     padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
