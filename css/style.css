@@ -625,7 +625,7 @@ textarea {
 /* info終了ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 
-/* shops_info コンポーネント */
+/* shops_infoーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .c-section.c-menu_section {
     padding-top: 0;
 }
@@ -656,7 +656,6 @@ textarea {
 
 .c-menu_info {
     display: flex;
-    /* flex-flow: row wrap; */
     flex-wrap: wrap;
     width: 100%;
 }
@@ -696,14 +695,7 @@ textarea {
     margin-right: 15px;
 }
 
-/* praivacy コンポーネント */
-/* .c-pravacy-title::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: var(--gyoza_red);
-} */
+/* praivacy ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
 .l-pravacy {
     font-size: 14px;
@@ -717,7 +709,6 @@ textarea {
 }
 
 .l-pravacy li {
-    /* text-indent: -1em; */
     padding-inline-start: 1em
 }
 
