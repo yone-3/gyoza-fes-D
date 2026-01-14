@@ -29,7 +29,6 @@ img {
 .l-wrapper {
     width: min(92%, 960px);
     margin: 0 auto;
-
 }
 
 /* -----------------モバイルファースト -----------------*/
@@ -70,31 +69,27 @@ img {
 }
 
 section {
-    /* padding-block: 30px; */
     padding-block: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 
 .c-title {
-    /* font-size: 32px; */
     font-size: clamp(32px, 30.592px + 0.376vw, 36px);
     font-weight: bold;
     border-block-end: 3px solid var(--gyoza_red);
     text-align: center;
     padding-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
     padding-block-end: 30px;
-    margin-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
+    margin-block-end: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 
 .c-title__sub {
-    /* font-size: 24px; */
     font-size: clamp(24px, 21.183px + 0.751vw, 32px);
     font-weight: bold;
     color: var(--white);
     background: var(--gyoza_red);
     padding: 5px 10px;
-    /* margin-block-end: 30px; */
     margin-block-end: clamp(30px, 12.394px + 4.695vw, 80px);
 }
 
@@ -104,6 +99,7 @@ section {
     font-weight: bold;
     color: var(--white);
     max-width: 300px;
+    /* width: 100%; */
     text-align: center;
     margin: 0 auto;
 }
@@ -124,7 +120,6 @@ section {
     background: var(--gyoza_black);
     padding: 15px 85px;
     border-radius: 15px;
-    /* width: 122px; */
 }
 
 
@@ -138,6 +133,7 @@ section {
 
 .c-btn__sns {
     width: 150px;
+    height: 35px;
     background: var(--gyoza_black);
     color: var(--white);
     border-radius: 7px;
@@ -145,6 +141,10 @@ section {
 }
 
 /* SNS */
+.c-btn__sns a {
+    width: 100%;
+}
+
 .c-btn__sns img {
     width: 30px;
     height: 35px;
@@ -161,16 +161,11 @@ section {
     width: 60px;
     height: 60px;
     font-size: 16px;
-    /* padding-top: 6px; */
     font-weight: bold;
     color: var(--white);
     background: var(--gyoza_red);
-    /* border: none; */
     border-radius: 50%;
     cursor: pointer;
-    /* opacity: 0; */
-    /* visibility: hidden; */
-    /* transition: .2s; */
     letter-spacing: 1px;
 }
 
@@ -179,7 +174,7 @@ section {
     padding: 20px 0;
     text-align: center;
     background: var(--white);
-    margin-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+    margin-block-start: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
 .l-footer ul {
@@ -199,9 +194,26 @@ section {
     text-decoration: underline solid 1px var(--gyoza_black);
 }
 
+.c-footer__mbs60 {
+    margin-block-start: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
+.c-bb {
+    border-bottom: solid 1px var(--gyoza_black);
+}
+
+.c-bb:hover {
+    color: var(--gyoza_red);
+    border-color: var(--gyoza_red);
+}
+
 /* -----------------以下各ページごとのコーディング----------------- */
 
 /* ここからTOP / NEWSページ */
+.c-sp-inner {
+    background: var(--white);
+}
+
 .l-about-sec {
     background: var(--gyoza_yellow);
     padding-block: clamp(60px, 52.958px + 1.878vw, 80px);
@@ -216,21 +228,22 @@ section {
 .l-news-sec {
     background: var(--white);
     padding-block-end: 60px;
-    /* padding-block-start: 60px */
+    margin-block: 30px;
 }
 
 .l-sns-sec {
     background: var(--white);
     padding-block: 30px;
+    margin-block-end: 60px;
 }
 
 .c-mv-sec {
-    background: url(/img/mainvisual.jpg);
+    background: url(/img/mainvisual.jpg) center top;
     background-size: cover;
     object-fit: cover;
     padding-block-start: 68px;
-    /* padding-block-end: 200px; */
-    height: clamp(580px, 474.366px + 28.169vw, 880px);
+    height: clamp(550px, 433.803px + 30.986vw, 880px);
+    /* position: relative; */
 }
 
 .c-mv-sec__img {
@@ -240,6 +253,7 @@ section {
 }
 
 .c-mv-stamp {
+    /* position: absolute; */
     display: inline-block;
     color: var(--white);
     background: var(--gyoza_red);
@@ -251,13 +265,15 @@ section {
     text-align: center;
 }
 
+.c-top-title {
+    padding-block-start: 30px;
+}
+
 .c-about-concept {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-block-end: clamp(60px, 52.958px + 1.878vw, 80px);
-
-
 }
 
 .c-about-concept__big {
@@ -273,21 +289,19 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
-
+    gap: 60px;
 }
 
 .c-about-list dl {
     text-align: center;
+
 }
-
-
 
 .c-about-list dd {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(17px, 14.183px + 0.751vw, 25px);
+    gap: 17px;
 }
 
 .c-about-detail__title {
@@ -319,17 +333,15 @@ section {
     display: none;
 }
 
-
 .c-news-detail {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px dotted var(--gyoza_red);
+    border-bottom: 1px dashed var(--gyoza_red);
     padding: 20px 15px;
     background: var(--white);
 }
 
 .c-news-date {
-    /* padding-inline-start: 16px; */
     font-weight: normal;
     width: 162px;
 }
@@ -361,22 +373,38 @@ section {
     color: var(--white);
 }
 
+.c-icon_x img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ここからnews-detailページ */
+/* news-detailレイアウト */
+.c-newsDet-date {
+    margin-bottom: 10px;
+}
+
+.c-newsDet-con {
+    margin-bottom: clamp(60px, 52.958px + 1.878vw, 80px);
+}
+
+/* news-detailコンポーネント */
+
+
 /* ここからcontactページ */
 /*contactレイアウト  */
 .l-infCard {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 54px;
-    row-gap: 10px;
+    margin-bottom: 30px;
 }
 
 .l-infCard-lab {
     display: flex;
-    flex-basis: 250px;
     align-items: center;
     font-weight: bold;
     width: 100%;
-
+    padding: 10px;
 
 }
 
@@ -432,28 +460,27 @@ textarea {
     border: 1px solid var(--gyoza_black);
     background-color: var(--white);
     width: 100%;
-    padding: 10px;
 }
-
-
 
 /* ここからfaqページ */
 /* faq レイアウト */
 .l-faqCard {
     margin-top: 40px;
 }
-
+.l-faqCard :nth-last-of-type(1) {
+    margin-bottom: 0;
+}
 
 /* faqコンポーネント */
 .c-faqCard-q {
     font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(20px, 18.592px + 0.376vw, 24px);
     color: var(--gyoza_red);
     margin-right: 20px;
 }
 
 .c-faqCard dt {
-    font-size: 20px;
+    font-size: clamp(20px, 18.592px + 0.376vw, 24px);
     font-weight: bold;
     margin-bottom: 20px;
     display: flex;
@@ -464,14 +491,18 @@ textarea {
     margin-left: 35px;
 }
 
+.l-faq-dd-last {
+    margin-bottom: 0;
+}
 
 
 /* ここからshopsページ */
 /* shops レイアウト */
 .l-muCard-ul {
+    /* display: flex;
+    flex-wrap: wrap; */
     display: grid;
-    row-gap: 60px;
-
+    row-gap: clamp(60px, 52.958px + 1.878vw, 80px);
 }
 
 .l-mnCard>* {
@@ -521,12 +552,11 @@ textarea {
     width: 19px;
     height: 26px;
     background: url(../img/point.svg) no-repeat center center/100%;
-
 }
 
 .c-mnCard-des dt {
     display: inline-block;
-
+    width: 50px;
 }
 
 .c-mnCard-des dd {
@@ -537,7 +567,9 @@ textarea {
     font-size: 14px;
 }
 
-
+.l-menu_wrapper>h1 {
+    padding-top: clamp(30px, 26.479px + 0.939vw, 40px);
+}
 
 /* informationページーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
@@ -547,45 +579,42 @@ textarea {
 
 .c-info__text {
     border-bottom: 2px var(--gyoza_red) solid;
-    padding: 10px;
+    padding: clamp(10px, 2.958px + 1.878vw, 30px);
 }
 
-.bill {
+.c-info__text-bold {
     font-weight: bold;
 }
 
-.park {
-    font-weight: bold;
-}
-
-.info {
+.c-info__host {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 30px;
+    padding-top: clamp(30px, 26.479px + 0.939vw, 40px);
 }
 
-.info dt {
+.c-info__host dt {
     padding-bottom: 20px;
 }
 
-.host {
+.c-info__host-text {
     padding-bottom: 40px;
 }
 
-.map {
+.c-info__map {
     width: 100%;
     height: 270px;
     padding-top: 30px;
 }
 
+/* info終了ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+
 /* shops_info コンポーネント */
 .c-menu_img {
-    height: 259px;
+    height: clamp(259px, 96.676px + 43.286vw, 720px);
     object-fit: cover;
 }
-
-/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .c-menu_location {
     font-size: 18px;
@@ -601,11 +630,6 @@ textarea {
     align-items: center;
 }
 
-.c-title.c-menu_title {
-    font-size: 28px;
-    padding-top: 30px;
-}
-
 .c-menu_desc {
     font-size: 20px;
     margin-bottom: 45px;
@@ -613,7 +637,8 @@ textarea {
 
 .c-menu_info {
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -621,11 +646,13 @@ textarea {
     font-size: 20px;
     display: inline-block;
     font-weight: normal;
+    width: 60px;
 }
 
 .c-menu_info dd {
+    display: inline-block;
     font-size: 20px;
-    flex-basis: 80%;
+    width: calc(100% - 60px);
 }
 
 .c-menu_shop_title {
@@ -650,13 +677,13 @@ textarea {
 }
 
 /* praivacy コンポーネント */
-.c-pravacy-title::before {
+/* .c-pravacy-title::before {
     content: "";
     display: inline-block;
     width: 10px;
     height: 10px;
     background: var(--gyoza_red);
-}
+} */
 
 .l-pravacy {
     font-size: 14px;
@@ -664,42 +691,40 @@ textarea {
     margin-bottom: 20px;
 }
 
-
 .l-pravacy ol {
     list-style-type: decimal;
     padding-left: 2em;
 }
 
-.l-pravacy ol ol {
-    list-style-type: lower-alpha;
-}
-
-.l-pravacy ul {
-    list-style-type: lower-alpha;
+.l-pravacy li {
+    /* text-indent: -1em; */
     padding-left: 1em
 }
 
-.l-pravacy ul ul {
+ul.c-pravacy-text-list-abc,
+ol.c-pravacy-text-list-abc {
+    list-style-type: lower-latin;
+}
+
+.c-pravacy-text-list-123 {
     list-style-type: lower-roman;
 }
+
 
 /* -----------------PC共通部分----------------- */
 /* ----------------－いじらないでね♥----------------- */
 @media(min-width:768px) {
-
+    .c-sp-inner {
+        background: transparent;
+    }
 
     .l-header {
         padding: 50px;
-        /* margin-block-end: 80px; */
     }
 
     .l-header-top {
         margin-block-end: 0;
     }
-
-    /* h1 img {
-        width: 350px;
-    } */
 
     .l-header-sp {
         display: none;
@@ -708,13 +733,15 @@ textarea {
     .l-header-pc {
         display: flex;
         justify-content: space-between;
-        /* margin-block-end: 80px; */
+        flex-wrap: wrap;
+        row-gap: 30px;
     }
 
     .c-header-nav ul {
         display: flex;
-        justify-content: space-between;
-        gap: 30px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        column-gap: 30px;
         align-items: center;
     }
 
@@ -739,11 +766,6 @@ textarea {
     }
 
 
-    /* .c-title {
-        padding-top: 80px;
-    } */
-
-
     /* -----------------以下、各ページ設定----------------- */
 
     /* TOP */
@@ -756,15 +778,9 @@ textarea {
         margin-block-end: 0;
     }
 
-
-
-    /* .c-mv-sec__img {
-        padding: 0 auto;
-    } */
-
-    /* .c-mv-sec__img img {
-        padding-block-start: 117px;
-    } */
+    .c-top-title {
+        padding-block-start: 40px;
+    }
 
     .c-about-concept {
         padding-inline: 90px;
@@ -773,21 +789,30 @@ textarea {
     .c-about-detail__top {
         margin-block-end: 80px;
         flex-direction: row;
-        justify-content: space-around;
         padding-block: 30px;
         border-top: 1px solid var(--gyoza_black);
         border-bottom: 1px solid var(--gyoza_black);
         gap: 0;
-    }
-
-    .c-about-list:first-of-type dl {
-        border-right: 1px solid var(--gyoza_black);
-        /* padding-inline-end: 30px; */
+        width: 100%;
     }
 
     .c-about-list {
-        width: 480px;
-        /* height: 413px; */
+        width: 50%;
+    }
+
+    .c-about-list dl {
+        /* width: 50%; */
+        height: 350px;
+        border-right: 1px solid var(--gyoza_black);
+    }
+
+    .c-about-list:nth-of-type(2) dl {
+        border-right: none;
+    }
+
+    .c-about-detail__main {
+        height: 250px;
+        justify-content: space-between;
     }
 
     .c-about-sp {
@@ -798,6 +823,14 @@ textarea {
         display: block;
     }
 
+    .l-news-sec {
+        margin-block: 40px;
+    }
+
+    .l-sns-sec {
+        margin-block-end: 120px;
+    }
+
     .c-news-detail {
         flex-direction: row;
     }
@@ -806,17 +839,28 @@ textarea {
         padding-inline-start: 16px;
     }
 
+
+
     .c-sns-icon {
         display: flex;
         flex-direction: row;
         gap: 84px;
     }
 
+    /* ここからnews-detailページ */
+    /* news-detailレイアウト */
+
+    /* news-detailコンポーネント */
+
+
     /* ここからcontact */
     /* contactレイアウト */
+    .l-infCard{
+    margin-bottom: 60px;
+}
     .l-infCard .l-infCard-lab {
         font-weight: bold;
-        width: 27%;
+        width: 250px;
     }
 
     input[type="text"],
@@ -835,50 +879,24 @@ textarea {
 
 
     /* faqコンポーネント */
-    .c-faqCard-q {
-        margin-right: 20px;
-        font-size: 24px;
-    }
-
-    .c-faqCard dt {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .c-faqCard dd {
-        margin-bottom: 30px;
-        margin-left: 35px;
-    }
-
-
 
 
     /* ここからshopsページ */
-    /* shopsレイアウト */
     .l-muCard-ul {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        row-gap: 80px;
         column-gap: 30px;
     }
 
     /* shops コンポーネント */
-    .l-muCard-ul .c-mnCard {
-        width: 100%;
-    }
 
     .l-muCard-ul .c-mnCard img {
-        width: 100%;
-        object-fit: cover;
         height: 225px;
     }
 
+
     /* ここからshops_info */
     .c-menu_img {
-        height: 720px;
         width: 100%;
-        object-fit: cover;
     }
 
     .c-menu_location {
@@ -887,56 +905,32 @@ textarea {
         align-items: center;
     }
 
-    .c-title.c-menu_title {
-        font-size: 36px;
-        padding-top: 0;
-    }
-
     .c-menu_desc {
         margin-top: 80px;
     }
 
-    .c-menu_info dt {
-        font-size: 20px;
-        display: inline-block;
-    }
-
-    .c-menu_info dd {
-        font-size: 20px;
-        flex-basis: 92%;
-    }
-
-
-
     /* pc版info-------------------------------------------------------------------------------- */
-
 
     .c-info__list {
         display: grid;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 17.5% 82.5%;
     }
 
     .c-info__title {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         border-bottom: 2px var(--gyoza_red) solid;
         padding: 30px;
     }
-
-    .c-info__text {
-        padding: 30px;
-    }
-
 
     .info {
         padding-top: 40px;
     }
 
-    .map {
+    .c-info__map {
         height: 321px;
         padding-top: 40px;
     }
-
 
 
 }
