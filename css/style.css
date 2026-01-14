@@ -626,6 +626,10 @@ textarea {
 
 
 /* shops_info コンポーネント */
+.c-section.c-menu_section {
+    padding-top: 80px;
+}
+
 .c-menu_img {
     height: clamp(259px, 96.676px + 43.286vw, 720px);
     object-fit: cover;
