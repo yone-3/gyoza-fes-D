@@ -598,8 +598,14 @@ textarea {
     padding: clamp(10px, 2.958px + 1.878vw, 30px);
 }
 
-.c-info__text-bold {
+.c-info__text--bold {
     font-weight: bold;
+}
+
+.c-info__map {
+    width: 100%;
+    height: 270px;
+    padding-block-start: 30px;
 }
 
 .c-info__host {
@@ -613,15 +619,11 @@ textarea {
     padding-block-end: 20px;
 }
 
-.c-info__host-text {
+.c-info__text-host {
     padding-block-end: 40px;
 }
 
-.c-info__map {
-    width: 100%;
-    height: 270px;
-    padding-block-start: 30px;
-}
+
 
 /* info終了ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
@@ -884,7 +886,7 @@ ol.c-pravacy-text-list-abc {
     input[type="tel"],
     textarea {
         width: calc(100% - 250px);
-        
+
     }
 
     /* contactコンポーネント */
