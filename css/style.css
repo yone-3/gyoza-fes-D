@@ -58,6 +58,10 @@ img {
     height: 24px;
 }
 
+.c-header-nav img {
+    display: block;
+}
+
 .c-header-nav li a:hover {
     border-block-end: solid 2px var(--gyoza_red);
 }
